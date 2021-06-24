@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Traffic Layer</title>
+    <title>ERIK GIESEN LOO</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -18,131 +19,10 @@
       }
     </style>
   </head>
-  <body>
+  <body style="background-color:grey;">
 
     <iframe frameborder="0" src="https://itch.io/embed-upload/4069342?color=333333" allowfullscreen="" width="1024" height="620"><a href="https://epenguin.itch.io/fourgotten">Play Fourgotten on itch.io</a></iframe>
-    /* Install OS on HP */
-0. Instert USB
-1. Press F9
 
-/* FOLDER FOR INSTALLING LIBRARIES */
-compiled libraries go to: /usr/local/lib/
-headers go to:  /usr/local/include
-.cpp go to:  /usr/local/src/project_name/
-
-/* First things first */
-0. sudo apt-get update
-1. sudo apt-get upgrade
-2. Download and install Chrome .deb file
-3. System Setting -> Install United theme
-
-/* To Install Mozc & Pinyin */
-0. sudo apt-get install fcitx im-config kde-config-fcitx
-1. sudo apt install fcitx-mozc fcitx-googlepinyin
-2. download and install Sogou Pinyin: https://pinyin.sogou.com/linux/?r=pinyin
-3. im-config -n fcitx
-4. Alt+F2 -> fcitx
-5. RESTART
-6. Configure Fcitx -> Input Method -> Uncheck "Only show current languages"
-7. Add Mozc and Sogou Pinyin
-8. RESTART again
-
-/* To Install Libraries */
-0. sudo apt-get install build-essential g++
-1. sudo apt-get install zlib1g-dev libreadline-dev freeglut3-dev
-2. go to library path: cd /path/to/library
-4. move library to /usr/local/lib using: sudo mv library /usr/local/lib
-5. go to library with: cd /usr/local/lib/library
-6. configure library using: ./configure; make; make clean
-7. In vi ~/.bashrc, type: export JEMDIR=/usr/local/lib/jem-2.2
-
-6. Repeat steps 1 through 5 for Jive;
-
-/* To Install GLFW */
-0. sudo apt-get install libglfw3-dev libglfw3
-1. sudo apt-get install xorg-dev libglu1-mesa-dev
-0. sudo apt-get install cmake 
-1. Download zip from: https://github.com/glfw/glfw
-2. move library to /usr/local/lib using: sudo mv library /usr/local/lib
-3. go to library with: cd /usr/local/lib/library
-4. cmake .
-5. make
-
-/* Installing Python2 */
-0. sudo apt install python2.7 python-pip (pip2 not in ubuntu20.04)
-1. pip2 install <package>
-
-/* Installing Anaconda */
-0. sudo apt install curl
-1. SEARCH FOR LATEST VERSION!!!
-2. sudo apt install python3-pip python3-setuptools python3-venv
-3. python3 -m pip install --user pipx
-
-/* Installing VS code */
-0. Find a link for downloading the .deb file
-
-/* Installing MATLAB */
-0. Download MATLAB and unzip in any folder
-1. Go to that folder and type: sudo sh install
-2. Click the box that allows you to type matlab in the bash
-3. For username, type whoami in the bash
-4. If this did not work, re-install from scratch
-
-/* Installing Octave */
-0. sudo apt install octave
-
-/* Set folder for Python scripts */
-0. vim ~/.bashrc
-1. export PATH=/home/erik/Documents/Python/bin
-2. source ~/.bashrc
-
-/* Installing git */
-$ sudo apt-get install git
-$ git config --global user.name "Erik"
-$ git config --global user.email erik.giesenloo@gmail.com
-$ git config --global core.editor code
-$ git config --list
-
-/* New repository */
-https://help.github.com/en/articles/creating-a-new-repository
-https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
-
-git init
-git add .
-git add LICENSE
-git commit -m "first commit"
-git remote add origin git@github.com:erikjloo/Octave-FEM.git
-git remote -v
-git push origin master
-
-/* Accentally created a license */
-git pull origin master
-
-/* Cloning repository */
-git clone https://github.com/erikjloo/Python-FEM.git
-
-/* Ungit a folder */
-rm -rf .git .gitignore
-
-/* Installing Wine */
-1. sudo apt install wine-stable
-2. sudo apt install playonlinux
-3. sudo apt install winetricks
-4. pipx install protontricks
-5. pipx upgrade protontricks
-
-/*Installing AoE2 */
-https://www.reddit.com/r/aoe2/comments/aa6lry/aoe2hd_on_debian_linux_via_steam_play_tutorial/
-
-~/.steam/steam/steamapps/common$ 
-
-/* Computer space */
-sudo apt-get clean
-sudo apt-get autoremove --purge
-sudo apt-get autoremove
-
-/* Other handy software */
-pdfmod
 
   </body>
 </html>
