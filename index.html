@@ -17,23 +17,91 @@
         margin: 0;
         padding: 0;
       }
+      div { color : white;}
       h2 {
-        color: white;
+        color: skyblue;
       }
       p {
+        color:steelblue;
+      }
+      td{
         color: white;
+      }
+      li {
+        color:white;
+      }
+      img {
+        width: 2em;
+        float: left;
       }
     </style>
   </head>
   <body style="background-color:black;">
-    <h2>About me</h2>
-    <p>Hello</p>
-    <h2>Skills</h2>
-    <p>Hello</p>
-    <h2>Skills</h2>
-    <p>Hello</p>
-    <h2>Skills</h2>
+    <div id = "wrapper">
 
-    <iframe frameborder="0" src="https://itch.io/embed-upload/4069342?color=333333" allowfullscreen="" width="1024" height="620"><a href="https://epenguin.itch.io/fourgotten">Play Fourgotten on itch.io</a></iframe>
+      <header>
+        HELLO
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#home" class="nav__link">About me</a></li>
+            <!-- <li class="nav__item"><a href="#home" class="nav__link">Home</a></li> -->
+            <!-- <li class="nav__item"><a href="#home" class="nav__link">Home</a></li> -->
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Introduction -->
+      <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+          Hi, I am <strong>Erik Giesen Loo</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">structural engineer</p>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <h2 class="section__title section__title--skills">Skills</h2>
+
+
+      </section>
+        
+      
+      <table>
+        <tr>
+          <td><img class ="logo", display:inline-block, src="images/flags/cpp.png"></td>
+          <td>C++</td>
+        </tr>
+        <tr>
+          <td><img class ="logo", display:inline-block, src="images/flags/python.png"></td>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <td><img class ="logo", display:inline-block, src="images/flags/matlab.png"></td>
+          <td>MATLAB</td>
+        </tr>
+        <tr>
+          <td><img class ="logo", display:inline-block, src="images/flags/latex.png"></td>
+          <td>Latex</td>
+        </tr>
+        <tr>
+          <td><img class ="logo", display:inline-block, src="images/flags/Godot.png"></td>
+          <td>Godot</td>
+        </tr>
+        <tr>
+          <td><img class ="logo", display:inline-block, src="images/flags/Tux.png"></td>
+          <td>Linux</td>
+        </tr>
+      </table>
+      
+      <section class="projects" id="projects">
+        <h2 class="section__title section__title--skills">Projects</h2>
+        <div class="projects">
+          
+        </div>
+      </section>
+      
+      <iframe frameborder="0" src="https://itch.io/embed-upload/4069342?color=333333" allowfullscreen="" width="1024" height="620"><a href="https://epenguin.itch.io/fourgotten">Play Fourgotten on itch.io</a></iframe>
+    </div>
   </body>
 </html>
