@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?familu=Source+Code+pro:400,900|Source+Sans+Pro:300,900&display=swap">
     <link rel="stylesheet" href="css/style.css">  <!-- Instead of having <style> in this page -->
   </head>
+
+  <!---------------------------------------------------------------------------------------->
+  <!-- Body -->
+  <!---------------------------------------------------------------------------------------->
   <body>
     <div id = "wrapper">
       <!-- Header/Navigation -->
@@ -29,7 +33,9 @@
         </nav>
       </header>
 
+      <!------------------------------------------------------------------------------------>
       <!-- Introduction -->
+      <!------------------------------------------------------------------------------------>
       <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
           Hi, I am <strong>Erik Giesen Loo</strong>
@@ -52,75 +58,83 @@
         <!-- add image here -->
       </section>
 
+      <!------------------------------------------------------------------------------------>
       <!-- Skills -->
+      <!------------------------------------------------------------------------------------>
       <section class="skills" id="skills">
         <h2 class="section__title section__title--skills">Skills</h2>
-
-
+        <!-- <div class="skills">
+            <img class ="logo", display:inline-block, src="images/flags/cpp.png">
+            <p>C++</p>
+            <img class ="logo", display:inline-block, src="images/flags/python.png">
+            <p>Python</p>
+            <img class ="logo", display:inline-block, src="images/flags/matlab.png">
+            <p>MATLAB</p>
+            <img class ="logo", display:inline-block, src="images/flags/latex.png">
+            <p>Latex</p>
+            <img class ="logo", display:inline-block, src="images/flags/Godot.png">
+            <p>Godot</p>
+            <img class ="logo", display:inline-block, src="images/flags/Tux.png">
+            <p>Linux</p>
+        </div> -->
+        <table style="margin: 0 auto;">
+          <tr>
+            <td><img class ="logo", display:inline-block, src="images/flags/cpp.png"></td>
+            <td>C++</td>
+            <td><img class ="logo", display:inline-block, src="images/flags/python.png"></td>
+            <td>Python</td>
+            <td><img class ="logo", display:inline-block, src="images/flags/matlab.png"></td>
+            <td>MATLAB</td>
+            <td><img class ="logo", display:inline-block, src="images/flags/latex.png"></td>
+            <td>Latex</td>
+            <td><img class ="logo", display:inline-block, src="images/flags/Godot.png"></td>
+            <td>Godot</td>
+            <td><img class ="logo", display:inline-block, src="images/flags/Tux.png"></td>
+            <td>Linux</td>
+          </tr>
+        </table>
       </section>
-      
-      <table>
-        <tr>
-          <td><img class ="logo", display:inline-block, src="images/flags/cpp.png"></td>
-          <td>C++</td>
-        </tr>
-        <tr>
-          <td><img class ="logo", display:inline-block, src="images/flags/python.png"></td>
-          <td>Python</td>
-        </tr>
-        <tr>
-          <td><img class ="logo", display:inline-block, src="images/flags/matlab.png"></td>
-          <td>MATLAB</td>
-        </tr>
-        <tr>
-          <td><img class ="logo", display:inline-block, src="images/flags/latex.png"></td>
-          <td>Latex</td>
-        </tr>
-        <tr>
-          <td><img class ="logo", display:inline-block, src="images/flags/Godot.png"></td>
-          <td>Godot</td>
-        </tr>
-        <tr>
-          <td><img class ="logo", display:inline-block, src="images/flags/Tux.png"></td>
-          <td>Linux</td>
-        </tr>
-      </table>
 
+      <!------------------------------------------------------------------------------------>
       <!-- Projects -->
+      <!------------------------------------------------------------------------------------>
       <section class="projects" id="projects">
         <h2 class="section__title section__title--projects">Projects</h2>
         <p class="section__subtitle section__subtitle--projects">Qiee</p>
         <div class="portfolio">
-          <a href="#" class="portfolio--item">
-            <img src="images/projects/Frame.png" alt="" class="portfolio--img">
+          <a href="#" class="portfolio__item">
+            <img src="images/projects/WeakPBC.png" alt="" class="portfolio__img">
           </a>
-          <a href="#" class="portfolio--item">
-            <img src="images/projects/Shells.png" alt="" class="portfolio--img">
+          <a href="#" class="portfolio__item">
+            <img src="images/projects/Shells.png" alt="" class="portfolio__img">
           </a>
-          <a href="#" class="portfolio--item">
-            <img src="images/projects/WeakPBC.png" alt="" class="portfolio--img">
+          <a href="#" class="portfolio__item">
+            <img src="images/projects/Frame.png" alt="" class="portfolio__img">
           </a>
         </div>
-
-        <!-- <div class="projects">
-          a
-        </div>
-        <div class="projects">
-          b
-        </div>
-        <div class="projects">
-          c
-        </div> -->
       </section>
-      <section>
-      
+
+      <section>     
         <iframe frameborder="0" src="https://itch.io/embed-upload/4069342?color=333333" allowfullscreen="" width="1024" height="620"><a href="https://epenguin.itch.io/fourgotten">Play Fourgotten on itch.io</a></iframe>
       </section>
 
-
+      <!------------------------------------------------------------------------------------>
       <!-- Footer -->
-      <footer>
+      <!------------------------------------------------------------------------------------>
+      <footer class="footer">
         <a href="mailto:erik.giesenloo@gmail.com" class="footer__link">erik.giesenloo@gmail.com</a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/erik-giesen-loo/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/erikjloo">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
       </footer>
 
     </div>
