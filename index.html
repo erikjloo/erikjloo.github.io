@@ -1,51 +1,29 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title>ERIK GIESEN LOO</title>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      div { color : white;}
-      h2 {
-        color: skyblue;
-      }
-      p {
-        color:steelblue;
-      }
-      td{
-        color: white;
-      }
-      li {
-        color:white;
-      }
-      img {
-        width: 2em;
-        float: left;
-      }
-    </style>
-  </head>
-  <body style="background-color:black;">
-    <div id = "wrapper">
 
+    <!-- Links to stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?familu=Source+Code+pro:400,900|Source+Sans+Pro:300,900&display=swap">
+    <link rel="stylesheet" href="css/style.css">  <!-- Instead of having <style> in this page -->
+  </head>
+  <body>
+    <div id = "wrapper">
+      <!-- Header/Navigation -->
       <header>
-        HELLO
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#home" class="nav__link">About me</a></li>
-            <!-- <li class="nav__item"><a href="#home" class="nav__link">Home</a></li> -->
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
             <!-- <li class="nav__item"><a href="#home" class="nav__link">Home</a></li> -->
           </ul>
         </nav>
@@ -56,7 +34,22 @@
         <h1 class="section__title section__title--intro">
           Hi, I am <strong>Erik Giesen Loo</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">structural engineer</p>
+        <p class="section__subtitle section__subtitle--intro">Qiee</p>
+        <!-- add image here -->
+      </section>
+
+      <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Qiee</p>
+        <div class="about-me__body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt aliquam quo accusamus minima labore velit quas, nesciunt vitae exercitationem a veritatis veniam quidem sequi expedita reiciendis eos, sunt obcaecati!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt aliquam quo accusamus minima labore velit quas, nesciunt vitae exercitationem a veritatis veniam quidem sequi expedita reiciendis eos, sunt obcaecati!
+          </p>
+        </div>
+        <!-- add image here -->
       </section>
 
       <!-- Skills -->
@@ -65,7 +58,6 @@
 
 
       </section>
-        
       
       <table>
         <tr>
@@ -93,15 +85,44 @@
           <td>Linux</td>
         </tr>
       </table>
-      
+
+      <!-- Projects -->
       <section class="projects" id="projects">
-        <h2 class="section__title section__title--skills">Projects</h2>
-        <div class="projects">
-          
+        <h2 class="section__title section__title--projects">Projects</h2>
+        <p class="section__subtitle section__subtitle--projects"></p>
+        <div class="portfolio">
+          <a href="#" class="portfolio--item">
+            <img src="images/projects/Frame.png" alt="" class="portfolio--img">
+          </a>
+          <a href="#" class="portfolio--item">
+            <img src="images/projects/Shells.png" alt="" class="portfolio--img">
+          </a>
+          <a href="#" class="portfolio--item">
+            <img src="images/projects/WeakPBC.png" alt="" class="portfolio--img">
+          </a>
         </div>
+
+        <!-- <div class="projects">
+          a
+        </div>
+        <div class="projects">
+          b
+        </div>
+        <div class="projects">
+          c
+        </div> -->
       </section>
+      <section>
       
-      <iframe frameborder="0" src="https://itch.io/embed-upload/4069342?color=333333" allowfullscreen="" width="1024" height="620"><a href="https://epenguin.itch.io/fourgotten">Play Fourgotten on itch.io</a></iframe>
+        <iframe frameborder="0" src="https://itch.io/embed-upload/4069342?color=333333" allowfullscreen="" width="1024" height="620"><a href="https://epenguin.itch.io/fourgotten">Play Fourgotten on itch.io</a></iframe>
+      </section>
+
+
+      <!-- Footer -->
+      <footer>
+        <a href="mailto:erik.giesenloo@gmail.com" class="footer__link">erik.giesenloo@gmail.com</a>
+      </footer>
+
     </div>
   </body>
 </html>
