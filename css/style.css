@@ -27,40 +27,61 @@
 
 /* General styles */
 body {
-    background: var(--clr-dark);
-    color: var(--clr-light);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
+    background: var(--clr-dark);    /* background colour */
+    color: var(--clr-light);        /* Text colour */
+    font-family: var(--ff-primary); /* Font */
+    font-size: var(--fs-body);      /* Size */
+    font-weight: var(--fw-reg);     /* Weight */
+    text-align: center;             /* Alignment */
+    line-height: 1.6;               /* Line spacing */
+    padding: 5em 2em;
 }
-section { padding: 5em 2em; }
-
-img { display: block; width: 20em; }
+/* section { display : block; padding: 5em 2em; } */
+.img {display: block; width: 300px;}
+.portfolio--img { width: 300px; }
 .logo { width: 2em; float: left; }
 
-strong { font-weight: var(--fw-bold); }
-
 /* Typography */
+strong { font-weight: var(--fw-bold); }
 h1, h2, h3 { line-height: 1; margin: 0; }
 h1 { font-size: var(--fs-h1); }
 h2 { font-size: var(--fs-h2); }
 h3 { font-size: var(--fs-h3); }
 
-.section__title{ margin-bottom: .25em; }
+.section__title{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h2);
+    color: var(--clr-light);
+    margin-bottom: .25em; }
 .section__title--intro { font-weight: var(--fw-reg); }
-.section__subtitle{ margin: 0; font-size: var(--fs-h3); }
-
+.section__subtitle{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+    color: var(--clr-accent);
+    margin-bottom: 1em; }
 .section__subtitle--intro, .section__subtitle--about { 
     background: var(--clr-accent);
+    color: var(--clr-light);
     font-family: var(--ff-secondary);
-    margin-bottom: 1em;
 }
+
 
 /* Header */
 nav { display: none; }
 
 /* Intro section */
-.intro {
-    position: relative;
+.intro { position: relative; }
+
+/* About me */
+
+/* Portfolio */
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto; /* Centered */
+    max-width: 900px;
+    justify-content: center;    /* just in case */
+    align-content: center;      /* just in case */
+    justify-items: center;      /* just in case */
+    align-items: center;        /* just in case */
 }
