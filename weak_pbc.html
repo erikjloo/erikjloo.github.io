@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/a121ebfe88.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>ERIK GIESEN LOO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?familu=Source+Code+pro:400,900|Source+Sans+Pro:300,900&display=swap">
+    <link rel="stylesheet" href="css/style.css"> 
+    </head>
+
+  <!------------------------------------------------------------------->
+  <!-- Body -->
+  <!------------------------------------------------------------------->
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="index.html#projects" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="resume/GiesenLoo_CVEN21.pdf" class="nav__link">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!----------------------------------------------------------------->
+    <!-- Introduction -->
+    <!----------------------------------------------------------------->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Stress-controlled <strong>weakly periodic boundary conditions</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Axial stress under varying orientations</p>
+      <!-- add image here -->
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Multiscale computational homogenization is an efficient method to upscale the microstructural behavior of micro-heterogeneous materials. In this method, a representative volume element (RVE) is assigned to a macroscale material point and the constitutive law for the macroscopic model at that point is obtained by solving a boundary value problem on the RVE. Among the conventional boundary conditions, the so-called strong periodic boundary conditions tend to converge faster towards the actual microstructural response. Nonetheless, applying strong periodic boundary conditions to a batch of 48 fiber-matrix RVEs under uniaxial load with varying orientations introduces a dependency between the average ultimate principal stress (σ1) and the orientation angle (θ). This treatise investigates the effects on this dependency by applying so-called weak periodic boundary conditions instead. These boundary conditions soften the strong requirement of periodicity of displacements at the RVE boundary by coarsening the traction mesh and requiring periodicity to hold only in an average sense over this coarser mesh. Three main questions are asked: Do weak periodic boundary conditions alleviate the dependency between σ1 and θ? Is this dependency the result of RVEs prone to localization under shear? Do smaller coarsening factors widen the range of θ over which localization with a single shear band is permissible? Overall, it is concluded that only the weakest form of weak periodic boundary conditions reduces the dependency between σ1 and θ, which is indeed caused by RVEs that are prone to strain localization under shear, particularly towards θ = 45o. Increasing coarsening factors quickly introduce stricter periodicity requirements, thus limiting the possibility of strain localization with a single shear band at angles other than θ = 45o. Recommendations are provided to alleviate the dependency between σ1 and θ as well as how to more realistically model the behavior of RVEs used in this research.</p>
+        <a href="https://repository.tudelft.nl/islandora/object/uuid%3A69c6f86e-f65c-4059-91ae-eb72d4e9c5c1">Check out my thesis</a>
+        <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/nme.6441">Check out the paper</a>
+    </div>
+    <!----------------------------------------------------------------->
+    <!-- Footer -->
+    <!----------------------------------------------------------------->
+    <footer class="footer">
+      <a href="mailto:erik.giesenloo@gmail.com" class="footer__link">erik.giesenloo@gmail.com</a>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="https://www.linkedin.com/in/erik-giesen-loo/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://github.com/erikjloo">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/a121ebfe88.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>ERIK GIESEN LOO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?familu=Source+Code+pro:400,900|Source+Sans+Pro:300,900&display=swap">
+    <link rel="stylesheet" href="css/style.css"> 
+    </head>
+
+  <!------------------------------------------------------------------->
+  <!-- Body -->
+  <!------------------------------------------------------------------->
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="index.html#projects" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="resume/GiesenLoo_CVEN21.pdf" class="nav__link">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!----------------------------------------------------------------->
+    <!-- Introduction -->
+    <!----------------------------------------------------------------->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Quantifying the influence of membrane forces, curvature, and imperfections on the nonlinear buckling load of <strong>thin-shells</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">My project</p>
+      <!-- add image here -->
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Shells tend to be thin because their curvature enables them to carry distributed loads as membrane forces. The property of thinness stems from shells’ capacity to store membrane strain energy without much deformation. As a result, buckling failures often govern the design of shell structures. These buckling failures usually start locally, at a location where a combination of curvature and membrane forces is met. Moreover, shells tend to be imperfection-sensitive structures, that is, real-life shells (with initial geometric imperfections) usually cannot resist loads as high as the theoretically predicted critical buckling load. Advanced finite element analyses can accurately predict these so-called nonlinear buckling loads but require significant time and computation effort. On the other hand, current design equations are simple yet highly inaccurate and often penalize strength significantly. This treatise caters a Python script that executes nonlinear finite element analyses (using ANSYS Mechanical APDL) to generate a database of the nonlinear buckling loads of shell portions with varying membrane forces, curvatures and magnitudes of initial geometric imperfections. The aim, beyond the scope of this treatise, is to perform a parametric regression on said database to device design equation(s) that accurately predict the nonlinear buckling load of linear-elastic shell structures with initial geometric imperfections based merely on the linear elastic results of a geometrically perfect shell model.</p>
+        <a href="https://repository.tudelft.nl/islandora/object/uuid%3A7d50f334-9c64-4ad0-8a23-e97ceacc2dce">Check out my thesis</a>
+
+    </div>
+    <!----------------------------------------------------------------->
+    <!-- Footer -->
+    <!----------------------------------------------------------------->
+    <footer class="footer">
+      <a href="mailto:erik.giesenloo@gmail.com" class="footer__link">erik.giesenloo@gmail.com</a>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="https://www.linkedin.com/in/erik-giesen-loo/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://github.com/erikjloo">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
