@@ -86,8 +86,8 @@ header, footer { justify-content: space-between; padding: 1em; }
 .social__link { padding: 0.5em; }
 .fab { font-family: 'FontAwesome' !important; font-size: var(--fs-h2); font-style: normal; }
 
+/* Hamburger */
 .nav-toggle { position: absolute; padding: .5em; right: 1em; top: 1em; }
-
 .hamburger { display: block; position: relative; } /* position relative to nav-toggle */
 .hamburger::before, .hamburger::after { content: ''; position: absolute; left: 0; right: 0; }
 .hamburger, .hamburger::before, .hamburger::after {
@@ -132,7 +132,7 @@ header, footer { justify-content: space-between; padding: 1em; }
 
 .portfolio__item:focus { position: relative; z-index: 2; }
 .portfolio__img:hover, .portfolio__item:focus img { transform: scale(1.2); opacity: 0.35; }
-.portfolio__img:hover div, .portfolio__item:focus div{ opacity: 1.0; }
+.portfolio__item:hover div, .portfolio__item:focus div { opacity: 1.0; }
 
 /* Portfolio Item */
 .portfolio-item-individual { padding: 0 2em 2em; max-width: 1000px; margin: 0 auto; }
