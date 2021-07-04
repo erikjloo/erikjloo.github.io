@@ -115,9 +115,11 @@ header, footer { justify-content: space-between; padding: 1em; }
 
 /* Portfolio */
 .portfolio__item {
+    position: relative; /* Needed for text to appear on image when hovering */
     border: var(--border);
     width: 300px;
     height: 300px;
+    z-index: 100;
     border-radius: 10px;
     overflow: hidden;
     transition: 
@@ -127,11 +129,16 @@ header, footer { justify-content: space-between; padding: 1em; }
 }
 
 .portfolio__img { width: inherit; height: inherit; transition: inherit; }
-.portfolio__text { width: inherit; height: inherit; transition: inherit; }
-.portfolio__text { position: absolute; bottom: 0; right: 0; opacity: 0; }
+.portfolio__text {
+    position: absolute; /* Needed for text to appear on image when hovering */
+    transition: inherit;
+    top: 0; bottom: 0;
+    left: 0; right: 0; 
+    opacity: 0;
+}
 
-.portfolio__item:focus { position: relative; z-index: 2; }
-.portfolio__img:hover, .portfolio__item:focus img { transform: scale(1.2); opacity: 0.35; }
+.portfolio__item:focus { position: relative; z-index: 1000; }
+.portfolio__item:hover img, .portfolio__item:focus img { transform: scale(1.2); opacity: 0.35; }
 .portfolio__item:hover div, .portfolio__item:focus div { opacity: 1.0; }
 
 /* Portfolio Item */
