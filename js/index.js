@@ -1,9 +1,10 @@
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav__link');
+const navLinks = document.querySelectorAll('.nav__link');
 
 navToggle.addEventListener('click', () => {
-    console.log("oi");
-    console.log(document.querySelector('.nav-open'));
+    // Print F12 - go to console
+    // console.log("I am working");
+    // console.log(document.querySelector('.nav-open'));
     document.body.classList.toggle('nav-open');
 });
 
