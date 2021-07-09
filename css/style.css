@@ -119,7 +119,6 @@ header, footer { justify-content: space-between; padding: 1em; }
     mask-image: linear-gradient(center to left, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
-
 /* Skills */
 .skills__table{
     display: grid;
@@ -142,7 +141,11 @@ header, footer { justify-content: space-between; padding: 1em; }
 
 .skill__logo { position: absolute; transition: inherit; top: 30px; left: 30px; width: 30px; }
 .skill__text { position: absolute; transition: inherit; width: inherit; height: 30px; bottom: 0; opacity: 0;}
-.skill__item:hover div p { opacity: 1.0; }
+
+.skill__item:focus { z-index: 1000; }
+.skill__item:hover img, .skill__item:focus img { transform: scale(2.0); }
+.skill__item:hover div, .skill__item:focus div { opacity: 1.0; }
+
 /* Portfolio */
 .portfolio{
     display: grid;
@@ -150,7 +153,6 @@ header, footer { justify-content: space-between; padding: 1em; }
     max-width: 1200px;
     margin: 0 auto; 
 }
-
 .portfolio__item {
     position: relative; /* Needed for text to appear on image when hovering */
     width: 300px;
