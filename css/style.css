@@ -37,7 +37,6 @@ html { scroll-behavior: smooth; }               /* Smooth scrolling from nav */
 section { display : block; padding: 5em 2em; }  /* excludes header and footer */
 ul { list-style : none; }                       /* Removes bullets from lists */
 button { padding: .5em; cursor: pointer; z-index: 1000; background: none; border: 0; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 1200px; margin: 0 auto; }
 :focus { outline: 3px solid var(--clr-lightblue); outline-offset: 1px; }
 
 /* Typography */
@@ -122,8 +121,12 @@ header, footer { justify-content: space-between; padding: 1em; }
 
 
 /* Skills */
-/* .skills { background: darkgray;} */
-.skills__table { margin: 0 auto; }
+.skills__table{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); 
+    max-width: 540px;
+    margin: 0 auto; 
+}
 .skill__item {
     position: relative; /* Needed for text to appear on image when hovering */
     background: black;
@@ -141,6 +144,13 @@ header, footer { justify-content: space-between; padding: 1em; }
 .skill__text { position: absolute; transition: inherit; width: inherit; height: 30px; bottom: 0; opacity: 0;}
 .skill__item:hover div p { opacity: 1.0; }
 /* Portfolio */
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
 .portfolio__item {
     position: relative; /* Needed for text to appear on image when hovering */
     width: 300px;
