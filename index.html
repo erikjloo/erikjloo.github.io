@@ -22,6 +22,7 @@
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
           <li class="nav__item"><a href="resume/GiesenLoo_CVEN21.pdf" class="nav__link">Resume</a></li>
         </ul>
       </nav>
@@ -31,20 +32,17 @@
     <!-- Introduction -->
     <!----------------------------------------------------------------->
     <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Erik Giesen Loo</strong>
+      <img class="intro__image" src="images/backgrounds/panorama1.jpg">
+      <h1 class="intro__title">
+        ERIK GIESEN LOO
       </h1>
-      <p class="section__subtitle section__subtitle--intro">Graduate Engineer</p>
-      <!-- add image here -->
-    </section>
-
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <div class="about-me__body">
-        <p>I am a structural engineer with a Master's degree from TU Delft and experience programming in C++, Python, and MATLAB. </p>
-        <p>I am currently working at a Civil Engineering design consultancy on a variety of disciplines including data analysis using MATLAB, and I have recently completed Stanford's Algorithms specialisation offered through Coursera to enhance my algorithmic toolbox.</p>
-        <p>My interests are in computational modelling, software engineering, and game development.</p>
-      </div>
+      <p class="intro__text">
+        B.Sc. Civil Engineering, Bucknell University
+        M.Sc. Structural Engineering, TU Delft
+      </p>
+      <button class="intro__button" href="#projects">
+        Check out my work!
+      </button>
       <!-- add image here -->
     </section>
 
@@ -53,22 +51,32 @@
     <!----------------------------------------------------------------->
     <section class="skills" id="skills">
       <h2 class="section__title section__title--skills">Skills</h2>
-      <table class="skills__table">
+      <div class="skills grid">
+        <div class="skill__item">
+          <img class ="skill__logo", display:inline-block, src="images/logos/cpp.png">
+          <p class="skill__text">C++</p>
+        </div>
+        <div class="skill__item">
+          <img class ="skill__logo", display:inline-block, src="images/logos/cpp.png">
+          <p class="skill__text">C++</p>
+        </div>
+      </div>
+      <!-- <table class="skills__table">
         <tr>
-          <td><img class ="logo", display:inline-block, src="images/flags/cpp.png"></td>
+          <td><img class ="skill__logo", display:inline-block, src="images/logos/cpp.png"></td>
           <td>C++</td>
-          <td><img class ="logo", display:inline-block, src="images/flags/python.png"></td>
+          <td><img class ="skill__logo", display:inline-block, src="images/logos/python.png"></td>
           <td>Python</td>
-          <td><img class ="logo", display:inline-block, src="images/flags/matlab.png"></td>
+          <td><img class ="skill__logo", display:inline-block, src="images/logos/matlab.png"></td>
           <td>MATLAB</td>
-          <td><img class ="logo", display:inline-block, src="images/flags/latex.png"></td>
+          <td><img class ="skill__logo", display:inline-block, src="images/logos/latex.png"></td>
           <td>Latex</td>
-          <td><img class ="logo", display:inline-block, src="images/flags/Godot.png"></td>
+          <td><img class ="skill__logo", display:inline-block, src="images/logos/Godot.png"></td>
           <td>Godot</td>
-          <td><img class ="logo", display:inline-block, src="images/flags/Tux.png"></td>
+          <td><img class ="skill__logo", display:inline-block, src="images/logos/Tux.png"></td>
           <td>Linux</td>
         </tr>
-      </table>
+      </table> -->
     </section>
 
     <!----------------------------------------------------------------->
@@ -79,20 +87,32 @@
       <p class="section__subtitle section__subtitle--projects">A sample of my projects</p>
       <div class="portfolio grid">
         <a href="fourgotten.html" class="portfolio__item">
-          <img src="images/projects/fourgotten.gif" alt="" class="portfolio__img">
-          <div class="portfolio__text">Fourgotten</div>
+          <img src="images/projects/fourgotten.gif" alt="" class="portfolio__image">
+          <div class="portfolio__text">
+            <h3>Fourgotten</h3>
+            <p>Three children trapped within separate rooms of a large mansion must learn to work together if they wish to escape together. Will you be able to save them all? Or will someone be left behind?</p>
+          </div>
         </a>
         <a href="weak_pbc.html" class="portfolio__item">
-          <img src="images/projects/WeakPBC.png" alt="" class="portfolio__img">
-          <div class="portfolio__text">Weak PBC</div>
+          <img src="images/projects/WeakPBC.png" alt="" class="portfolio__image">
+          <div class="portfolio__text">
+            <h3>Weakly periodic boundary conditions</h3>
+            <p>Novel stress-controlled weakly periodic boundary conditions are presented to upscale the microscale response of materials in multiscale finite element analyses.</p>
+          </div>
         </a>
         <a href="shells.html" class="portfolio__item">
-          <img src="images/projects/Shells.png" alt="" class="portfolio__img">
-          <div class="portfolio__text">Shells</div>
+          <img src="images/projects/Shells.png" alt="" class="portfolio__image">
+          <div class="portfolio__text">
+            <h3>Nonlinear buckling of shells</h3>
+            <p>Shells tend to be thin because their curvature enables them to carry distributed loads as membrane forces. The property of thinness stems from shells’ capacity to store membrane strain energy without much deformation. As a result, buckling failures often govern the design of shell structures.</p>
+          </div>
         </a>
         <a href="stability.html" class="portfolio__item">
-          <img src="images/projects/Frame.png" alt="" class="portfolio__img">
-          <div class="portfolio__text">Stability</div>
+          <img src="images/projects/Frame.png" alt="" class="portfolio__image">
+          <div class="portfolio__text">
+            <h3>Design of steel structures</h3>
+            <p>Design by advanced second-order elastic analysis is based on the premise that reliance on approximate methods to account for parameters in design can be reduced by directly modeling them in the analysis.</p>
+          </div>
         </a>
       </div>
     </section>
