@@ -24,7 +24,6 @@
 /* General styles */
 body {
     margin: 0 !important;           /* Footer needs this */
-    padding: 0 !important;          /* Footer needs this */
     background: var(--clr-dark);    /* background colour */
     font-family: var(--ff-primary); /* Font */
     font-size: var(--fs-body);      /* Size */
@@ -40,7 +39,6 @@ button { padding: .5em; cursor: pointer; z-index: 1000; background: none; border
 :focus { outline: 3px solid var(--clr-lightblue); outline-offset: 1px; }
 
 /* Typography */
-strong { font-weight: var(--fw-bold); }
 h1, h2, h3 { line-height: 1; margin: 0; font-family: var(--ff-primary); }
 h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); color: var(--clr-lightblue); }
 h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); color: var(--clr-lightblue); }
@@ -108,18 +106,39 @@ header, footer { justify-content: space-between; padding: 1em; }
 .nav-open .hamburger::before { transform: rotate(90deg) translate(-6px); }
 .nav-open .hamburger::after { opacity: 0; }
 
+
 /* Intro section */
 .intro__image {
-    position: absolute; width: 600px; left: 0.1;
-    grid-area: img;
-    min-width: 600px;
-    max-width: 1000px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    left: 25vw;
+    width: 75vw;
+    z-index: -1; /* Hack to place image under text */
+}
+.intro__image img {
     filter: grayscale(100%);
-    -webkit-mask-image:-webkit-gradient(linear, center top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(center to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    /* -webkit-mask-image: linear-gradient(to right, transparent 5%, black 50%, black 50%, transparent 95%); */
+    /* mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+    -webkit-mask-image: radial-gradient(ellipse, black 0%, transparent 70%);
+    mask-image: radial-gradient(ellipse, black 0%, transparent 70%);
 }
 
+/* @media (min-width: 600px) { */
+    .intro { margin: 1em 10%; } /*https://www.w3schools.com/css/css_margin.asp*/
+    .intro__title { font-size: 4rem; padding-bottom: 6rem;}
+    .intro__image { left: 30vw; width: 70vw;}
+    .intro__image img {width: 40vw;}
+/* } */
+
+/* .name { width: 50vw; } */
+.intro__button {
+    background-color: ivory;
+}
+
+
 /* Skills */
+/* .logo {width: 2em;} */
 .skills__table{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); 
