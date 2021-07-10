@@ -20,7 +20,6 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#projects" class="nav__link">Portfolio</a></li>
           <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
           <li class="nav__item"><a href="resume/GiesenLoo_CVEN21.pdf" class="nav__link">Resume</a></li>
@@ -45,8 +44,10 @@
       <p class="intro__text">
         M.Sc. Structural Engineering, TU Delft
       </p>
-      <button class="intro__button" href="#projects">
+
+      <a href="#projects" class="intro__button">
         Check out my work!
+      </a>
       </button>
       <!-- add image here -->
     </section>
@@ -55,7 +56,8 @@
     <!-- Skills -->
     <!----------------------------------------------------------------->
     <section class="skills" id="skills">
-      <h2 class="section__title section__title--skills">Skills</h2>
+      <h2 class="section__title">Skills</h2>
+      <p class="section__subtitle">My top skills</p>
       <div class="skills__table">
         <div class="skill__item">
           <img class ="skill__logo", display:inline-block, src="images/logos/cpp.png">
@@ -104,14 +106,14 @@
     <!-- Projects -->
     <!----------------------------------------------------------------->
     <section class="projects" id="projects">
-      <h2 class="section__title section__title--projects">Portfolio</h2>
-      <p class="section__subtitle section__subtitle--projects">A sample of my projects</p>
+      <h2 class="section__title">Portfolio</h2>
+      <p class="section__subtitle">A sample of my projects</p>
       <div class="portfolio">
         <a href="fourgotten.html" class="portfolio__item">
           <img src="images/projects/fourgotten.gif" alt="" class="portfolio__image">
           <div class="portfolio__text">
             <h3>Fourgotten</h3>
-            <p>Three children trapped within separate rooms of a large mansion must learn to work together if they wish to escape together. Will you be able to save them all? Or will someone be left behind?</p>
+            <p>Three children trapped in separate rooms of a large mansion must learn to work together if they wish to escape. Will you be able to save them all? Or will someone be left behind?</p>
           </div>
         </a>
         <a href="weak_pbc.html" class="portfolio__item">
@@ -124,15 +126,15 @@
         <a href="shells.html" class="portfolio__item">
           <img src="images/projects/Shells.png" alt="" class="portfolio__image">
           <div class="portfolio__text">
-            <h3>Nonlinear buckling of shells</h3>
-            <p>Shells tend to be thin because their curvature enables them to carry distributed loads as membrane forces. The property of thinness stems from shells’ capacity to store membrane strain energy without much deformation. As a result, buckling failures often govern the design of shell structures.</p>
+            <h3>Buckling of shells</h3>
+            <p>Thin shell structures are prone to local buckling due to high membrane forces. A parametric study is prepared as foundation for research into more accurate design equations.</p>
           </div>
         </a>
         <a href="stability.html" class="portfolio__item">
           <img src="images/projects/Frame.png" alt="" class="portfolio__image">
           <div class="portfolio__text">
             <h3>Design of steel structures</h3>
-            <p>Design by advanced second-order elastic analysis is based on the premise that reliance on approximate methods to account for parameters in design can be reduced by directly modeling them in the analysis.</p>
+            <p>Design by advanced 2nd-order elastic analysis is based on the premise that reliance on approximate methods to account for design parameters can be reduced by directly modeling them in the analysis.</p>
           </div>
         </a>
       </div>
