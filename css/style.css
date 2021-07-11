@@ -105,8 +105,8 @@ header, footer { justify-content: space-between; padding: 1em; }
 .nav-open .hamburger::after { opacity: 0; }
 
 /* Fade-in while scrolling */
-.fade-in { opacity: 0; transition: opacity 250ms ease-in; }
-.fade-in.appear { opacity: 1; }
+.fade-in { opacity: 0; transform: translateY(50%); transition: opacity 500ms ease-in; }
+.fade-in.appear { opacity: 1; transform: translateY(0); }
 
 /* Intro section */
 .intro__image {
