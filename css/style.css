@@ -22,7 +22,7 @@
 body {
     display: flex;                  /* Footer needs this to go to bottom*/
     flex-direction: column;         /* Footer needs this to go to bottom*/
-    min-height: 100vw;              /* Footer needs this to go to bottom*/
+    min-height: 100%;               /* Footer needs this to go to bottom*/
     margin: 0 !important;           /* Footer needs this to remove its margin*/
     background: var(--clr-dark);    /* background colour */
     font-family: var(--ff-primary); /* Font */
@@ -32,8 +32,9 @@ body {
     text-align: center;             /* Alignment */
     line-height: 1.6;               /* Line spacing */
 }
-html { scroll-behavior: smooth; }                   /* Smooth scrolling from nav */
+html { height: 100%; scroll-behavior: smooth; }     /* Smooth scrolling from nav */
 section { display : block; padding: 5rem 2rem; }    /* Adds padding to sections excl. nav and footer */
+footer { margin-top: auto; }
 ul { list-style : none; }                           /* Removes bullets from lists */
 :focus { outline: 3px solid var(--clr-accent); outline-offset: 1px; }
 button { padding: 0.5em; cursor: pointer; z-index: 1000; background: none; border: 0; }
