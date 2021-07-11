@@ -92,7 +92,7 @@ header, footer { justify-content: space-between; padding: 1em; }
     width: 2em;
     height: 3px;
     border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    transition: transform 500ms ease-in-out;
 }
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
@@ -104,6 +104,9 @@ header, footer { justify-content: space-between; padding: 1em; }
 .nav-open .hamburger::before { transform: rotate(90deg) translate(-6px); }
 .nav-open .hamburger::after { opacity: 0; }
 
+/* Fade-in while scrolling */
+.fade-in { opacity: 0; transition: opacity 250ms ease-in; }
+.fade-in.appear { opacity: 1; }
 
 /* Intro section */
 .intro__image {
