@@ -55,26 +55,26 @@ var imageArray = ["./images/backgrounds/panorama1.jpg",
 
 var imageIndex = 0;
 
-function swapImage() {
+// function swapImage() {
 
-    var newImage = imageArray[imageIndex];
-    image.animate({opacity: 0}, function() { imageSwapTidyUp(newImage) });
-    // imageContainer.setAttribute("background-image", 'url(' + newImage + ')');
-    // imageContainer.data('index', imageIndex);
-    image.setAttribute("src", newImage);
-    imageIndex++;
-    if (imageIndex >= imageArray.length) {
-        imageIndex = 0;
-    }
-}
-function imageSwapTidyUp(newImage) {
-    // Change img src to new image
-    image.prop('src', newImage);
-    // Make img opaque
-    image.animate({ opacity: 1 }, 100);
-}
+//     var newImage = imageArray[imageIndex];
+//     image.animate({opacity: 0}, function() { imageSwapTidyUp(newImage) });
+//     // imageContainer.setAttribute("background-image", 'url(' + newImage + ')');
+//     // imageContainer.data('index', imageIndex);
+//     image.setAttribute("src", newImage);
+//     imageIndex++;
+//     if (imageIndex >= imageArray.length) {
+//         imageIndex = 0;
+//     }
+// }
+// function imageSwapTidyUp(newImage) {
+//     // Change img src to new image
+//     image.prop('src', newImage);
+//     // Make img opaque
+//     image.animate({ opacity: 1 }, 100);
+// }
 
-setInterval(swapImage, 3000);
+// setInterval(swapImage, 3000);
 
 // (function() {
 //     "use strict";
