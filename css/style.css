@@ -9,24 +9,21 @@
     --fw-bold: 900;
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-lightblue: skyblue;
+    --clr-accent: skyblue;
     --clr-blue: steelblue;
-    --fs-h0: 8vw;
     --fs-h1: 3rem;
     --fs-h2: 2rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-    /* --box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-                  0.125em 0.125em 0.25em rgba(0,0,0,.15); */
     --border: 2px solid var(--clr-dark);
 }
 
 /* General styles */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vw;
-    margin: 0 !important;           /* Footer needs this */
+    display: flex;                  /* Footer needs this to go to bottom*/
+    flex-direction: column;         /* Footer needs this to go to bottom*/
+    min-height: 100vw;              /* Footer needs this to go to bottom*/
+    margin: 0 !important;           /* Footer needs this to remove its margin*/
     background: var(--clr-dark);    /* background colour */
     font-family: var(--ff-primary); /* Font */
     font-size: var(--fs-body);      /* Size */
@@ -35,25 +32,28 @@ body {
     text-align: center;             /* Alignment */
     line-height: 1.6;               /* Line spacing */
 }
-html { scroll-behavior: smooth; }               /* Smooth scrolling from nav */
-section { display : block; padding: 5em 2em; }  /* excludes header and footer */
-ul { list-style : none; }                       /* Removes bullets from lists */
-button { padding: .5em; cursor: pointer; z-index: 1000; background: none; border: 0; }
-:focus { outline: 3px solid var(--clr-lightblue); outline-offset: 1px; }
+html { scroll-behavior: smooth; }                   /* Smooth scrolling from nav */
+section { display : block; padding: 5rem 2rem; }    /* Adds padding to sections excl. nav and footer */
+ul { list-style : none; }                           /* Removes bullets from lists */
+:focus { outline: 3px solid var(--clr-accent); outline-offset: 1px; }
+button { padding: 0.5em; cursor: pointer; z-index: 1000; background: none; border: 0; }
 
 /* Typography */
 h1, h2, h3 { line-height: 1; margin: 0; font-family: var(--ff-primary); }
-h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); color: var(--clr-lightblue); }
-h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); color: var(--clr-lightblue); }
-h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-lightblue); }
+h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); color: var(--clr-accent); }
+h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); color: var(--clr-accent); }
+h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-accent); }
 
-.intro__title { color: var(--clr-light); font-size: var(--fs-h0); font-weight: var(--fw-reg); }
+.intro__title { font-size: min(4rem, 8vw); font-weight: var(--fw-reg); color: var(--clr-light);}
 .intro__title, .intro__text { text-align: left; }
 .section__title { font-family: var(--ff-primary); }
 .section__subtitle{ font-family: var(--ff-secondary); }
+.nav, .footer { background: #111; font-size: var(--fs-h3); font-weight: var(--fw-bold);}
 .skill__text, .portfolio__text p { color: var(--clr-light); font-family: var(--ff-secondary);  }
+.fab { font-family: 'FontAwesome' !important; font-size: var(--fs-h2); font-style: normal; }
+.footer { color: var(--clr-accent); }
 
-/* Little hline under headers */
+/* Little line under section titles */
 .section__title::after {
     content: '';
     display: block;
@@ -66,27 +66,21 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-ligh
 
 /* Header and footer */
 .nav { position: fixed; height: 2.5em; top: 0; left: 0; right: 0; z-index: 2000; }
-.nav, .footer { background: #111; font-size: var(--fs-h3); font-weight: var(--fw-bold);}
-.footer { color: var(--clr-lightblue); }
-
+.nav__list { display: flex; justify-content: space-evenly; margin: 0; padding: 0.5em 1.5em; }
 .nav {
     transform: translate(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
-
-.nav__list { display: flex; justify-content: space-evenly; align-items: center; height: 100%; margin: 0; }
-
 .nav a, .footer a { color: inherit; text-decoration: none; }    /* Color and no underscore */
-.nav__link:hover { color: var(--clr-lightblue); }               /* Nav hover effect */
+.nav__link:hover { color: var(--clr-accent); }                  /* Nav hover effect */
 .footer__link:hover, .social__link:hover { opacity: 0.7; }      /* Footer hover effect */
 
-.social { display: flex; justify-content: center; }
-.social__item { margin: 0 0.5em; }      /* Add 0.5 em margin to left and right */
-.social__link { padding: 0.5em; }       /* Add 0.5em padding for easier clicking */
-.fab { font-family: 'FontAwesome' !important; font-size: var(--fs-h2); font-style: normal; }
+.social { display: flex; justify-content: center; }     /* Keep social icons centered */
+.social__item { margin: 0 0.5em; }                      /* Add 0.5em margin to left and right */
+.social__link { padding: 0.5em; }                       /* Add 0.5em padding for easier clicking */
 
 /* Hamburger */
-.nav-toggle { position: absolute; padding: 0.5em; right: 1.2em; top: 1.2em; z-index: 3000; }
+.nav-toggle { position: absolute; padding: 0.5em; right: 0.5em; top: 1.2em; z-index: 3000; }
 .hamburger { display: block; position: relative; } /* position relative to nav-toggle */
 .hamburger::before, .hamburger::after { content: ''; position: absolute; left: 0; right: 0; }
 .hamburger, .hamburger::before, .hamburger::after {
@@ -107,39 +101,23 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-ligh
 .nav-open .hamburger::after { opacity: 0; }
 
 /* Fade-in while scrolling */
-@media (min-width: 400px){
-    .fade-in { opacity: 0; transform: translateY(50%); transition: opacity 500ms ease-in; }
-    .fade-in.appear { opacity: 1; transform: translateY(0); }
-}
+.fade-in { opacity: 0; transform: translateY(50%); transition: opacity 500ms ease-in; }
+.fade-in.appear { opacity: 1; transform: translateY(0); }
 
 /* Intro section */
-.intro__image {
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    left: 25vw;
-    /* width: 75vw; */
-    z-index: -1; /* Hack to place image under text */
-}
+.intro { margin: 1em max(0em, 50vw - 22rem); }  /* half page - half figure - padding = 50vw - 22rem */
+.intro__image { position: absolute; overflow: hidden; width: min(40rem, 100vw - 3rem); z-index: -1; }
 .intro__image img {
+    width: 40rem;
     filter: grayscale(100%);
     -webkit-mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
     mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
 }
-
-@media (min-width: 600px) {
-    .intro { margin: 1em 25vw; } /*https://www.w3schools.com/css/css_margin.asp*/
-    .intro__title { font-size: 4rem; padding-bottom: 6rem;}
-    .intro__image { left: 40vw; width: 60vw; }
-    .intro__image img { width: 40vw; }
-}
-
-/* .name { width: 50vw; } */
 .intro__button {
     display: inline-block;
     margin: 4em auto;
     padding: .5em 3em;
-    background-color: var(--clr-lightblue);
+    background-color: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
     font-size: .8rem;
@@ -148,12 +126,9 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-ligh
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
 }
-
 .intro__button:hover { transform: scale(1.1); }
 
-
 /* Skills */
-/* .logo {width: 2em;} */
 .skills__table{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); 
@@ -204,7 +179,7 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-ligh
 .portfolio__text { position: absolute; transition: inherit; top: 20px; left :20px; right: 20px; opacity: 0; }
 
 .portfolio__item:focus { z-index: 1000; }
-.portfolio__item:hover img, .portfolio__item:focus img { transform: scale(1.2); opacity: 0.10; }
+.portfolio__item:hover img, .portfolio__item:focus img { transform: scale(1.2); opacity: 0.1; }
 .portfolio__item:hover div, .portfolio__item:focus div { opacity: 1.0; }
 
 /* Portfolio Item */
