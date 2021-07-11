@@ -107,8 +107,10 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-ligh
 .nav-open .hamburger::after { opacity: 0; }
 
 /* Fade-in while scrolling */
-.fade-in { opacity: 0; transform: translateY(50%); transition: opacity 500ms ease-in; }
-.fade-in.appear { opacity: 1; transform: translateY(0); }
+@media (min-width: 400px){
+    .fade-in { opacity: 0; transform: translateY(50%); transition: opacity 500ms ease-in; }
+    .fade-in.appear { opacity: 1; transform: translateY(0); }
+}
 
 /* Intro section */
 .intro__image {
