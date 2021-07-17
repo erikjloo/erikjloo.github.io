@@ -109,7 +109,7 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
 .nav-open .hamburger::after { opacity: 0; }
 
 /* Fade-in while scrolling */
-.fade-in { opacity: 0; transform: translateY(50%); transition: 500ms ease-in; }
+.fade-in { opacity: 0; transform: translateY(20%); transition: 500ms ease-in; }
 .fade-in.appear { opacity: 1; transform: translateY(0); }
 
 /* Intro section */
@@ -120,7 +120,12 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
     filter: grayscale(100%);
     -webkit-mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
     mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
+    transition: 1000ms ease;
 }
+.intro__image + .intro__image { position: absolute; top: 0; left: 0; z-index: -2; opacity: 0; }
+.intro__image__fade-out { opacity: 0; }
+.intro__image__fade-in { opacity: 1; }
+
 .intro__button {
     display: inline-block;
     margin: 10em auto;

@@ -46,57 +46,55 @@ faders.forEach(fader => {
 //===========================================================================
 
 var imageContainer = document.querySelector(".intro__image__container")
-var image = document.querySelector(".intro__image");
-var imageArray = ["./images/backgrounds/panorama1.jpg", 
-                  "./images/backgrounds/panorama2.jpg",
+var imageArray = ["./images/backgrounds/panorama2.jpg", 
                   "./images/backgrounds/panorama3.jpg",
                   "./images/backgrounds/panorama4.jpg",
-                  "./images/backgrounds/panorama5.jpg"]
-
+                  "./images/backgrounds/panorama5.jpg",
+                  "./images/backgrounds/panorama6.jpg"]
 var imageIndex = 0;
 
-// function swapImage() {
+function whichTransitionEvent(){
+    var t;
+    var el = document.createElement('fakeelement');
+    var transitions = {
+      'transition':'transitionend',
+      'OTransition':'oTransitionEnd',
+      'MozTransition':'transitionend',
+      'WebkitTransition':'webkitTransitionEnd'
+    }
 
-//     var newImage = imageArray[imageIndex];
-//     image.animate({opacity: 0}, function() { imageSwapTidyUp(newImage) });
-//     // imageContainer.setAttribute("background-image", 'url(' + newImage + ')');
-//     // imageContainer.data('index', imageIndex);
-//     image.setAttribute("src", newImage);
-//     imageIndex++;
-//     if (imageIndex >= imageArray.length) {
-//         imageIndex = 0;
-//     }
-// }
-// function imageSwapTidyUp(newImage) {
-//     // Change img src to new image
-//     image.prop('src', newImage);
-//     // Make img opaque
-//     image.animate({ opacity: 1 }, 100);
-// }
+    for(t in transitions){
+        if( el.style[t] !== undefined ){
+            return transitions[t];
+        }
+    }
+}
+var transitionEnd = whichTransitionEvent();
+function swapImage() {
 
-// setInterval(swapImage, 3000);
+    image = document.querySelector(".intro__image");
+    
+    // We add a new image behind our current image
+    var newImage = new Image();
+    newImage.src = imageArray[imageIndex];
+    newImage.className = "intro__image";
+    imageContainer.insertBefore(newImage, image.nextSibling);
 
-// (function() {
-//     "use strict";
+    // Transition end is only detected if a class is added
+    image.classList.add("intro__image__fade-out");
+    // Synchronous transitions can only happen if animate is used
+    newImage.animate( { opacity: 1 }, 1000);
+    // Add event listener works much better than setTimeout
+    image.addEventListener(transitionEnd, removeImage);
 
-//     function swapImage(newIndex, preload) {
-//         var newImage;
+    imageIndex++;
+    if (imageIndex >= imageArray.length) {
+        imageIndex = 0;
+    }
+}
+function removeImage(event) { 
+    image.removeEventListener(transitionEnd, removeImage);
+    imageContainer.removeChild(image); 
+}
 
-//         if (!image.is(':animated')) {
-//             newImage = imageArray[newIndex];
-//             // Set background-image to new image
-//             image.setAttribute("src", imageArray[newIndex]);
-
-//             // If this is a preload, we should 
-//             if (!preload) {
-//                 //Set data-index to the new index value
-//                 imageContainer.data('index', newIndex);
-
-//                 // Fade old image
-//                 imageContainer.find('img').animate({ opacity: 0 }, function () {
-//                     //** Callback upon fade animation completed **/
-//                     imageSwapTidyUp(newImage);
-//                 });
-//             }
-//         }
-//     }
+setInterval(swapImage, 5000);
