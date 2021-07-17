@@ -83,7 +83,7 @@ function swapImage() {
     // Transition end is only detected if a class is added
     image.classList.add("intro__image__fade-out");
     // Synchronous transitions can only happen if animate is used
-    newImage.animate( { opacity: 1 }, 1000);
+    newImage.animate( { opacity: 1 }, 2000);
     // Add event listener works much better than setTimeout
     image.addEventListener(transitionEnd, removeImage);
 
@@ -96,5 +96,4 @@ function removeImage(event) {
     image.removeEventListener(transitionEnd, removeImage);
     imageContainer.removeChild(image); 
 }
-
-setInterval(swapImage, 5000);
+setInterval(swapImage, 20000);

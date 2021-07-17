@@ -120,7 +120,7 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
     filter: grayscale(100%);
     -webkit-mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
     mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
-    transition: 1000ms ease;
+    transition: 2000ms ease;
 }
 .intro__image + .intro__image { position: absolute; top: 0; left: 0; z-index: -2; opacity: 0; }
 .intro__image__fade-out { opacity: 0; }
