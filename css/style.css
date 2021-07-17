@@ -48,7 +48,7 @@ h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); color: var(--clr-acce
 h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); color: var(--clr-accent); }
 h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-accent); }
 
-.intro__title { font-size: min(4rem, 8vw); font-weight: var(--fw-reg); color: var(--clr-light);}
+.intro__title { font-size: min(4.3rem, 8vw); font-weight: var(--fw-reg); color: var(--clr-light);}
 .intro__title, .intro__text { text-align: left; }
 .nav, .footer { background: #111; font-size: var(--fs-h3); font-weight: var(--fw-bold);}
 .skill__text, .portfolio__text p { font-family: var(--ff-secondary); color: var(--clr-light); }
