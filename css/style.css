@@ -146,8 +146,9 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
 .portfolio{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 .portfolio__item {
     position: relative; /* Needed for text to appear on image when hovering */
@@ -173,7 +174,8 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
 /* Skills */
 .skills__table{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    justify-items: center;
     max-width: 540px;
     margin: 0 auto; 
 }
