@@ -38,7 +38,7 @@ footer { margin-top: auto; }                        /* Sends footer to the botto
 ul { list-style : none; }                           /* Removes bullets from lists */
 p { max-width: 600px; margin-left: auto; margin-right: auto; }
 a { color: inherit; text-decoration: none; }        /* Color and no underscore */
-:focus { outline: 3px solid var(--clr-accent); outline-offset: 1px; }
+:focus { z-index: 1000; outline: 3px solid var(--clr-accent); outline-offset: 1px; }
 button { padding: 0.5em; cursor: pointer; z-index: 1000; background: none; border: 0; }
 
 .item { 
@@ -164,7 +164,6 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
 .portfolio__image { transition: inherit; width: inherit; height: inherit; }
 .portfolio__text { position: absolute; transition: inherit; top: 20px; left :20px; right: 20px; opacity: 0; }
 
-.portfolio__item:focus { z-index: 1000; }
 .portfolio__item:hover img, .portfolio__item:focus img { transform: scale(1.2); opacity: 0.1; }
 .portfolio__item:hover div, .portfolio__item:focus div { opacity: 1.0; }
 
@@ -177,13 +176,13 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     justify-items: center;
     max-width: 540px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 .skill__item { 
-    position: relative; 
-    background: black; 
-    width: 90px; 
-    height: 120px; 
+    position: relative;
+    background: black;
+    width: 90px;
+    height: 120px;
     border: var(--border);
     border-radius: 10px;
     overflow: hidden;
@@ -195,6 +194,5 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
 .skill__logo { position: absolute; transition: inherit; top: 30px; left: 30px; width: 30px; }
 .skill__text { position: absolute; transition: inherit; width: inherit; height: 30px; bottom: 0; opacity: 0;}
 
-.skill__item:focus { z-index: 1000; }
 .skill__item:hover img, .skill__item:focus img { transform: scale(2.0); }
 .skill__item:hover div, .skill__item:focus div { opacity: 1.0; }
