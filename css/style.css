@@ -105,7 +105,7 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
 .background { position: absolute; overflow: hidden; padding: 0; left: calc(50% - 60rem); width: min(120rem, 50% + 60rem); z-index: -5; }
 
 /* Intro section */
-.intro { height: 100vh; margin: 1em max(0em, 50vw - 22rem); }  /* half page - half figure - padding = 50vw - 22rem */
+.intro { margin: 1em max(0em, 50vw - 22rem); }  /* half page - half figure - padding = 50vw - 22rem */
 .intro__image__container { position: absolute; overflow: hidden; width: min(40rem, 100vw - 3rem); z-index: -1; }
 .intro__image {
     width: 40rem;
