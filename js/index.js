@@ -4,6 +4,10 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 const faders = document.querySelectorAll('.fade-in');
 
+//===========================================================================
+// nav-bar functions
+//===========================================================================
+
 window.onscroll = function() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0)
     document.body.classList.add('nav-close');
