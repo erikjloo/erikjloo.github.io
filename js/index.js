@@ -6,6 +6,16 @@ const faders = document.querySelectorAll('.fade-in');
 
 
 // document.body.classList.add('nav-open')
+window.onscroll = function() {
+
+    var body = document.body; //IE 'quirks'
+    var document = document.documentElement; //IE with doctype
+    document = (document.clientHeight) ? document : body;
+
+    if (document.scrollTop == 0) {
+      document.body.classList.remove('nav-close');
+    }        
+};
 
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-close');
