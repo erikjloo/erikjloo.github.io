@@ -4,20 +4,11 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 const faders = document.querySelectorAll('.fade-in');
 
-
-// document.body.classList.add('nav-open')
 window.onscroll = function() {
-
-    var body = document.body; //IE 'quirks'
-    var doc = document.documentElement; //IE with doctype
-    doc = (doc.clientHeight) ? doc : body;
-
-    if (document.scrollTop == 0) {
-      console.printLn("oi");
-      document.body.classList.remove('nav-close');
-    }
-    else
-      document.body.classList.add('nav-close');
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0)
+    document.body.classList.add('nav-close');
+  else
+    document.body.classList.remove('nav-close');
 };
 
 navToggle.addEventListener('click', () => {
@@ -88,4 +79,4 @@ function swapImage() {
   // }
 }
 
-setInterval(swapImage, 10);
+setInterval(swapImage, 200);

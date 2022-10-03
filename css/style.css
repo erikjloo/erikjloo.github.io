@@ -96,7 +96,7 @@ h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-acce
 
 /* Fancy hamburger effects */
 .nav-close .nav { transform: translate(100%); }
-.nav-close .nav-toggle { position: absolute; }
+.nav-close .nav-toggle { position: fixed; }
 .nav-close .hamburger { transform: rotate(0); }
 .nav-close .hamburger::before { top: 6px; transform: translate(0); }
 .nav-close .hamburger::after { bottom: 6px; transform: translate(0); opacity: 100; }
