@@ -13,12 +13,11 @@ window.onscroll = function() {
     doc = (doc.clientHeight) ? doc : body;
 
     if (document.scrollTop == 0) {
+      console.printLn("oi");
       document.body.classList.remove('nav-close');
     }
     else
-    {
       document.body.classList.add('nav-close');
-    }
 };
 
 navToggle.addEventListener('click', () => {
