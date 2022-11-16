@@ -64,7 +64,7 @@ var imageIndex = 0;
 function swapImage() {
 
   image = document.querySelector(".intro__image");
-  
+
   // We add a new image behind our current image
   let newImage = new Image();
   newImage.src = imageArray[imageIndex];
