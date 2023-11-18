@@ -1,5 +1,3 @@
-// import { readdirSync } from 'fs';
-
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 const faders = document.querySelectorAll('.fade-in');
@@ -53,34 +51,70 @@ faders.forEach(fader => {
 // Switch background images
 //===========================================================================
 
-var imageContainer = document.querySelector(".intro__image__container")
 var imageArray = ["./images/backgrounds/panorama2.jpg", 
-          "./images/backgrounds/panorama3.jpg",
-          "./images/backgrounds/panorama4.jpg",
-          "./images/backgrounds/panorama5.jpg",
-          "./images/backgrounds/panorama6.jpg"]
+                  "./images/backgrounds/panorama3.jpg",
+                  "./images/backgrounds/panorama4.jpg",
+                  "./images/backgrounds/panorama5.jpg",
+                  "./images/backgrounds/panorama6.jpg"]
 var imageIndex = 0;
-
-function swapImage() {
-
-  image = document.querySelector(".intro__image");
-
-  // We add a new image behind our current image
-  let newImage = new Image();
-  newImage.src = imageArray[imageIndex];
-  newImage.className = "intro__image";
-  imageContainer.insertBefore(newImage, image.nextSibling);
-
-  // Transition end is only detected if a class is added
-  image.classList.add("intro__image__fade-out");
-  newImage.classList.add("intro__image__fade-in");
-  image.addEventListener('transitionend', () => { image.remove(); }, {once: true});
+                  
+function swapIntroImage() {
 
   imageIndex++;
   imageIndex %= imageArray.length;
-  // if (imageIndex >= imageArray.length) {
-  //   imageIndex = 0;
-  // }
+  swapImage("intro__image", imageArray[imageIndex])
 }
+setInterval(swapIntroImage, 12000);
 
-setInterval(swapImage, 200);
+function swapImage(elemName, imgName) { 
+  // /* Get the current image container */
+  // let container = document.querySelector(".intro__image__container");
+  // let parent = container.parentElement;
+
+  // /* Add new image container behind current image container  */
+  // let newContainer = document.createElement("div");
+  // newContainer.classList.add(".intro__image__container", "absolute", "fade-out");
+  // parent.insertBefore(newContainer, container);
+
+  // /* Create new image and add it to new image container */
+  // let newImage = new Image();
+  // newImage.classList.add("intro__image");
+  // newContainer.append(newImage);
+
+  // /* Perform cross-fade once new image loads */
+  // newImage.onload = () => {
+
+  //   /* Cross fade image containers */
+  //   container.classList.add("fade-out");
+  //   newContainer.classList.remove("fade-out");
+
+  //   container.addEventListener("transitionend", () => {
+  //     /* Remove old image */
+  //     container.remove();
+  //     /* make new image relative */
+  //     newContainer.classList.remove("absolute");
+  //   }, { once: true });
+  // }
+  
+  // var imageContainer = document.querySelector(".intro__image__container")
+  var image = document.querySelector("." + elemName);
+  console.log("." + elemName)
+  var container = image.parentElement;
+
+  // We add a new image behind our current image
+  let newImage = new Image();
+  newImage.classList.add(elemName, "fade-out");
+  container.insertBefore(newImage, image.nextSibling);
+
+  /* Perform cross-fade once new image loads */
+  newImage.onload = () => {  
+    /* Cross fade images */
+    image.classList.add("transition", "fade-out");
+    newImage.classList.add("transition")
+    newImage.classList.remove("fade-out");
+    image.addEventListener("transitionend", () => { image.remove(); }, {once: true});
+  }
+
+  /* Add the image source -> triggers onload */
+  newImage.src = imgName
+}
