@@ -11,13 +11,13 @@
   --fs-body: 1rem;
   --fw-reg: 300;
   --fw-bold: 900;
-  --clr-light: #fff;
-  --clr-grey: #404040;
-  --clr-dark: #303030;
-  --clr-black: #111;
-  --clr-accent: skyblue;
+  --clr-bg: #303030;
+  --clr-bg2: #404040;
+  --clr-fg: skyblue;
+  --clr-fg2: #fff;
+  --clr-footer: #111;
   --clr-blue: steelblue;
-  --border: 2px solid var(--clr-dark);
+  --border: 2px solid var(--clr-bg);
 }
 
 /* General styles */
@@ -26,28 +26,29 @@ body {
   flex-direction: column;         /* Footer needs this to go to bottom */
   min-height: 100vh;              /* Footer needs this to go to bottom*/
   margin: 0 !important;           /* Footer needs this to remove its margin*/
-  background: var(--clr-dark);    /* background colour */
+  background: var(--clr-bg);      /* Background colour */
+  color: var(--clr-fg2);          /* Foreground colour */
   font-family: var(--ff-primary); /* Font */
   font-size: var(--fs-body);      /* Size */
   font-weight: var(--fw-reg);     /* Weight */
-  color: var(--clr-light);        /* Colour */
   text-align: center;             /* Alignment */
   line-height: 1.6;               /* Line spacing */
   overflow-x: hidden;
 }
+
 .background__image { width: 120rem };
-html { height: 100%; scroll-behavior: smooth; }     /* Smooth scrolling from nav */
-section { display : block; position: relative; padding: 6rem 2rem; }    /* Adds padding to sections */
-footer { margin-top: auto; }                        /* Sends footer to the bottom */
-ul { list-style : none; }                           /* Removes bullets from lists */
-p { width: 100%; max-width: 70ch; margin-left: auto; margin-right: auto; } /* Paragraph width */
-a { color: inherit; text-decoration: none; transition: 200ms ease-in-out;} /* Hyperlinks */
-:focus { z-index: 1000; outline: 3px solid var(--clr-accent); outline-offset: 1px; }
+html { height: 100%; scroll-behavior: smooth; }                             /* Smooth scrolling from nav */
+section { display: block; position: relative; padding: 6rem 2rem; }         /* Adds padding to sections */
+footer { margin-top: auto; }                                                /* Sends footer to the bottom */
+ul { margin: 0; list-style: none; }                                         /* Removes bullets from lists */
+p { width: 100%; max-width: 70ch; margin-left: auto; margin-right: auto; }  /* Paragraph width */
+a { color: inherit; text-decoration: none; transition: 200ms ease-in-out;}  /* Hyperlinks */
+:focus { z-index: 1000; outline: 3px solid var(--clr-fg); outline-offset: 1px; }
 button { padding: 0.5em; cursor: pointer; z-index: 1000; background: none; border: 0; }
 
 /* Typography */
 h1, h2, h3 { line-height: 1; margin: 0; font-family: var(--ff-primary); }
-h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); color: var(--clr-accent); }
-h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); color: var(--clr-accent); }
-h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-accent); }
+h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); color: var(--clr-fg); }
+h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); color: var(--clr-fg); }
+h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-fg); }
 

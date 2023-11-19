@@ -67,36 +67,7 @@ function swapIntroImage() {
 }
 setInterval(swapIntroImage, 12000);
 
-function swapImage(elemName, imgName) { 
-  // /* Get the current image container */
-  // let container = document.querySelector(".intro__image__container");
-  // let parent = container.parentElement;
-
-  // /* Add new image container behind current image container  */
-  // let newContainer = document.createElement("div");
-  // newContainer.classList.add(".intro__image__container", "absolute", "fade-out");
-  // parent.insertBefore(newContainer, container);
-
-  // /* Create new image and add it to new image container */
-  // let newImage = new Image();
-  // newImage.classList.add("intro__image");
-  // newContainer.append(newImage);
-
-  // /* Perform cross-fade once new image loads */
-  // newImage.onload = () => {
-
-  //   /* Cross fade image containers */
-  //   container.classList.add("fade-out");
-  //   newContainer.classList.remove("fade-out");
-
-  //   container.addEventListener("transitionend", () => {
-  //     /* Remove old image */
-  //     container.remove();
-  //     /* make new image relative */
-  //     newContainer.classList.remove("absolute");
-  //   }, { once: true });
-  // }
-  
+function swapImage(elemName, imgName) {   
   // var imageContainer = document.querySelector(".intro__image__container")
   var image = document.querySelector("." + elemName);
   console.log("." + elemName)
