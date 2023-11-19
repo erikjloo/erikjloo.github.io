@@ -35,7 +35,7 @@
   margin: 12rem auto;
   padding: 0.5em 3em;
   color: var(--clr-bg);
-  background-color: var(--clf-fg);
+  background-color: var(--clr-button);
 }
 
 .intro__button:hover { transform: scale(1.1); }

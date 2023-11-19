@@ -1,6 +1,3 @@
-/* Set-up box-sizing (how padding is calculated) */
-*, *::before, *::after { box-sizing: border-box; }
-
 /* Custom properties */
 :root {
   --ff-primary: 'Source Sans Pro', sans-serif;
@@ -11,14 +8,17 @@
   --fs-body: 1rem;
   --fw-reg: 300;
   --fw-bold: 900;
+  --clr-nav: #111;
   --clr-bg: #303030;
   --clr-bg2: #404040;
   --clr-fg: skyblue;
   --clr-fg2: #fff;
-  --clr-footer: #111;
-  --clr-blue: steelblue;
+  --clr-button: steelblue;
   --border: 2px solid var(--clr-bg);
 }
+
+/* Set-up box-sizing (how padding is calculated) */
+*, *::before, *::after { box-sizing: border-box; }
 
 /* General styles */
 body {
