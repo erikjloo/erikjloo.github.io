@@ -109,6 +109,3 @@
 
 .projects__divider svg { height: 100px; transform: rotateY(180deg); }
 .projects__divider .shape-fill { fill: var(--clr-bg2); }
-
-.publications__divider svg { height: 64px; }
-.publications__divider .shape-fill { fill: var(--clr-footer); }
