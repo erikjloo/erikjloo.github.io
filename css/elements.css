@@ -45,22 +45,12 @@
   margin: 0;
   padding: 0.5em 1.5em;
 }
+.nav__link:hover { color: var(--clr-accent); opacity: 1.0; }
 
-.social {
-  position: fixed;
-  height: 2.5em;
-  top: 40vh;
-  right: 0;
-  z-index: 2000;
-}
-.social__link { opacity: 0.6; margin: 0.5em 0.5em; padding: 1em 0.5em 0.5em;
-}
-
-/* Add 0.5em padding for easier clicking */
+/* Social */
+.social { position: fixed; height: 2.5em; top: 40vh; right: 0; z-index: 2000; }
+.social__link { opacity: 0.6; margin: 0.5em 0.5em; padding: 1em 0.5em 0.5em; }
 .social__list { display: flex; justify-content: center; }
-
-/* Keep social icons centered */
-.nav__link:hover,
 .social__link:hover { color: var(--clr-accent); opacity: 1.0; }
 
 /* Nav and footer hover */
