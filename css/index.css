@@ -1,0 +1,14 @@
+.intro__button {
+  font-size: 0.8rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 12rem auto;
+  padding: 0.5em 3em;
+  color: var(--clr-dark);
+  background-color: var(--clr-accent);
+}
+
+.intro__button:hover {
+  transform: scale(1.1);
+}

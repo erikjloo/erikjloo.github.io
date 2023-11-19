@@ -1,28 +1,15 @@
 .intro__title { font-size: min(4.3rem, 8vw); font-weight: var(--fw-reg); color: var(--clr-light); }
 
 .nav, .footer { background: var(--clr-black); font-size: var(--fs-h3); font-weight: var(--fw-bold); }
+.footer { color: var(--clr-accent); }
 
 .skill__text, .portfolio__text p {
   font-family: var(--ff-secondary);
   color: var(--clr-light);
 }
 
-.fab {
-  font-family: 'FontAwesome' !important;
-  font-size: var(--fs-h2);
-  font-style: normal;
-}
+.fab { font-family: 'FontAwesome' !important; font-size: var(--fs-h2); font-style: normal; }
 
-.footer {
-  color: var(--clr-accent);
-}
-
-.intro__button {
-  font-size: 0.8rem;
-  font-weight: var(--fw-bold);
-  letter-spacing: 2px;
-  color: var(--clr-dark);
-}
 
 /* Little line under section titles */
 .section__title::after {
@@ -59,24 +46,22 @@
   padding: 0.5em 1.5em;
 }
 
-.social__link {
-  opacity: 0.6;
-  margin: 0.5em 0.5em;
-  padding: 1em 0.5em 0.5em;
+.social {
+  position: fixed;
+  height: 2.5em;
+  top: 40vh;
+  right: 0;
+  z-index: 2000;
+}
+.social__link { opacity: 0.6; margin: 0.5em 0.5em; padding: 1em 0.5em 0.5em;
 }
 
 /* Add 0.5em padding for easier clicking */
-.social__list {
-  display: flex;
-  justify-content: center;
-}
+.social__list { display: flex; justify-content: center; }
 
 /* Keep social icons centered */
 .nav__link:hover,
-.social__link:hover {
-  color: var(--clr-accent);
-  opacity: 1.0;
-}
+.social__link:hover { color: var(--clr-accent); opacity: 1.0; }
 
 /* Nav and footer hover */
 
@@ -176,16 +161,7 @@
   z-index: -2;
 }
 
-.intro__button {
-  display: inline-block;
-  margin: 12rem auto;
-  padding: 0.5em 3em;
-  background-color: var(--clr-accent);
-}
 
-.intro__button:hover {
-  transform: scale(1.1);
-}
 
 /* Portfolio */
 .portfolio {
@@ -400,11 +376,4 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
-}
-
-.box {
-  height: 200px;
-  width: 100%;
-  border: 1px solid black;
-  margin-right: 5px;
 }
