@@ -1,0 +1,21 @@
+/* Fade-in while scrolling */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 500ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Effects */
+.transition {
+    transition: 4000ms ease;
+}
+
+.fade-out {
+    visibility: hidden;
+    opacity: 0.0;
+}
