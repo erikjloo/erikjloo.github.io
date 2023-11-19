@@ -1,3 +1,39 @@
+/* Background image (semi-circle) */
+.background {
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  left: calc(50% - 60rem);
+  width: min(120rem, 50% + 60rem);
+  z-index: -5;
+}
+
+/* Intro section */
+.intro { margin: 1em max(0em, 50vw - 22rem); }
+
+/* half page - half figure - padding = 50vw - 22rem */
+.intro__image__container {
+  position: absolute;
+  overflow: hidden;
+  width: min(40rem, 100vw - 3rem);
+  height: 12rem;
+  filter: grayscale(100%);
+  -webkit-mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
+  mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
+  z-index: -2;
+}
+
+.intro__image {
+  width: 40rem;
+}
+
+.intro__image+.intro__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
 .intro__button {
   font-size: 0.8rem;
   font-weight: var(--fw-bold);
