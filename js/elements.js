@@ -22,7 +22,7 @@ document.getElementById("social").innerHTML =
 document.getElementById("footer").innerHTML = 
   `<footer class="footer">
     <a href="mailto:erik.giesenloo@gmail.com" class="social__link">erik.giesenloo@gmail.com</a>
-    <ul class="social__list">
+    <ul class="footer__list">
       <li><a class="social__link" href="mailto:erik.giesenloo@gmail.com"><i class="fab fa-envelope"></i></a></li>
       <li><a class="social__link" href="https://www.linkedin.com/in/erik-giesen-loo/"><i class="fab fa-linkedin"></i></a></li>
       <li><a class="social__link" href="https://github.com/erikjloo"><i class="fab fa-github"></i></a></li>
