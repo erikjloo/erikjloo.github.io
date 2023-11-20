@@ -14,10 +14,10 @@
 .burger { display: block; position: relative; }
 .burger::before, .burger::after {content: ''; position: absolute; left: 0; right: 0; }
 .burger, .burger::before, .burger::after {
-  background: var(--clr-fg2);
   width: 2em;
   height: 4px;
   border-radius: 1em;
+  background: var(--clr-fg2);
   transform: rotate(0.625turn);
   transition: transform 500ms ease-in-out;
 }
