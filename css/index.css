@@ -10,6 +10,12 @@
 
 /* Intro section */
 .intro { margin: 1em max(0em, 50vw - 22rem); }
+.intro__title {
+  color: var(--clr-fg2);
+  font-size: min(4.3rem, 8vw);
+  font-weight: var(--fw-reg);
+  text-align: left;
+}
 
 /* half page - half figure - padding = 50vw - 22rem */
 .intro__image__container {
