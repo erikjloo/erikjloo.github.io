@@ -1,21 +1,11 @@
-/* Background image (semi-circle) */
-.background {
-  position: absolute;
-  overflow: hidden;
-  padding: 0;
-  left: calc(50% - 60rem);
-  width: min(120rem, 50% + 60rem);
-  z-index: -5;
-}
+/* Background semi-circle */
+.background { position: absolute; overflow: hidden; left: calc(50vw - 60rem); }
+.background { width: min(120rem, 50vw + 60rem); padding: 0; z-index: -5; }
+.background__image { width: 120rem; }
 
-/* Intro section */
+/* Intro */
 .intro { margin: 1em max(0em, 50vw - 22rem); }
-.intro__title {
-  color: var(--clr-fg2);
-  font-size: min(4.3rem, 8vw);
-  font-weight: var(--fw-reg);
-  text-align: left;
-}
+.intro__title { color: var(--clr-fg2); font-size: min(4.3rem, 8vw); font-weight: var(--fw-reg); text-align: left; }
 
 /* half page - half figure - padding = 50vw - 22rem */
 .intro__image__container {

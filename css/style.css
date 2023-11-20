@@ -36,7 +36,6 @@ body {
   overflow-x: hidden;
 }
 
-.background__image { width: 120rem };
 html { height: 100%; scroll-behavior: smooth; }                             /* Smooth scrolling from nav */
 section { display: block; position: relative; padding: 6rem 2rem; }         /* Adds padding to sections */
 footer { margin-top: auto; }                                                /* Sends footer to the bottom */

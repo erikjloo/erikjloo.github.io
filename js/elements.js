@@ -1,8 +1,6 @@
 document.getElementById("header").innerHTML = 
   `<header>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="burger"></span>
-    </button>
+    <button class="nav-toggle"><span class="burger"></span></button>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
