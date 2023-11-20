@@ -1,26 +1,3 @@
-// class Header extends HTMLElement {
-//   constructor() { super(); }
-
-//   connectedCallback() {
-//     this.innerHTML = 
-//     `<header>
-//       <button class="nav-toggle" aria-label="toggle navigation">
-//       <span class="burger"></span>
-//         </button>
-//         <nav class="nav">
-//         <ul class="nav__list">
-//           <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-//           <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-//           <li class="nav__item"><a href="index.html#projects" class="nav__link">Portfolio</a></li>
-//           <li class="nav__item"><a href="gradients.html" class="nav__link">Colours</a></li>
-//           <li class="nav__item"><a href="resume/GiesenLoo_CVEN21.pdf" class="nav__link">CV</a></li>
-//         </ul>
-//       </nav>
-//     </header>`;
-//   }
-// }
-// customElements.define('header-component', Header);
-
 document.getElementById("header").innerHTML = 
   `<header>
     <button class="nav-toggle" aria-label="toggle navigation">
