@@ -8,7 +8,7 @@
 .footer__list { width: 10em; margin: auto; color: var(--clf-fg2); }
 
 .nav__link:after { content: ''; display: block; width: 0; height: 2px; margin: auto; }
-.nav__link:after { background: var(--clr-fg); transition: ease-in-out 200ms; }
+.nav__link:after { background: var(--clr-fg); transition: 250ms ease-in-out; }
 .nav__link:hover, .nav__link:hover:after{ color: var(--clr-fg); opacity: 1.0; width: 100%; }
 
 /* Nav-toggle */
