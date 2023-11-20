@@ -19,7 +19,7 @@ document.querySelectorAll('.nav__link').forEach(link => {
 });
 
 //===========================================================================
-// Fade-in
+// Fade-in while scrolling
 //===========================================================================
 const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
   entries.forEach(entry => {
@@ -34,26 +34,23 @@ document.querySelectorAll('.fade-in').forEach(fader => {
 })
 
 //===========================================================================
-// swapImage
+// Cross-fade images
 //===========================================================================
 function swapImage(elemName, imgName) {
+  // Add new image behind current image
   var image = document.querySelector("." + elemName);
-  var container = image.parentElement;
-
-  // We add a new image behind our current image
   let newImage = new Image();
-  newImage.classList.add(elemName, "fade-out");
-  container.insertBefore(newImage, image.nextSibling);
+  newImage.classList.add(elemName, "invisible");
+  image.parentElement.insertBefore(newImage, image.nextSibling);
 
-  /* Perform cross-fade once new image loads */
+  /* Cross-fade once new image loads */
   newImage.onload = () => {
-    /* Cross fade images */
-    image.classList.add("transition", "fade-out");
+    image.classList.add("transition", "invisible");
     newImage.classList.add("transition")
-    newImage.classList.remove("fade-out");
+    newImage.classList.remove("invisible");
     image.addEventListener("transitionend", () => { image.remove(); }, { once: true });
   }
 
-  /* Add the image source -> triggers onload */
+  /* Add image source -> triggers onload */
   newImage.src = imgName
 }

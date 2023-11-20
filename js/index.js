@@ -16,5 +16,3 @@ function swapIntroImage() {
   swapImage("intro__image", imageArray[imageIndex])
 }
 setInterval(swapIntroImage, 12000);
-
-
