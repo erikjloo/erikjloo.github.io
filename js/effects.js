@@ -39,7 +39,7 @@ document.querySelectorAll('.fade-in').forEach(fader => {
 function swapImage(elemName, imgName) {
   // Add new image behind current image
   var image = document.querySelector("." + elemName);
-  let newImage = new Image();
+  let newImage = document.createElement("img");
   newImage.classList.add(elemName, "invisible");
   image.parentElement.insertBefore(newImage, image.nextSibling);
 
