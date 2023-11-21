@@ -41,6 +41,9 @@
 .section__title::after { content: ''; display: block; width: 2em; height: 1px; }
 .section__title::after { margin: 0.5em auto 1em; background: var(--clr-fg2); }
 
+/* Thing (not sure what it should be called) */
+.portfolio-item-individual { padding: 0 2em 2em; max-width: 1000px; margin: 0 auto; }
+
 /* Dividers */
 .divider { position: absolute; bottom: 0; left: 0; width: 100%; transform: rotate(180deg); }
 .divider svg { position: relative; display: block; width: calc(150% + 1.3px); height: 100px; }
