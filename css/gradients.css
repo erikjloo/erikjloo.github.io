@@ -1,3 +1,10 @@
+.colours {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  justify-items: center;
+  max-width: 540px;
+  margin: 0 auto 5rem;
+}
 .box {
   height: 200px;
   width: 100%;
@@ -9,16 +16,11 @@
 .dropbtn {
   background-color: #04AA6D;
   color: white;
-  padding: 16px;
-  font-size: 16px;
   border: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+.dropdown {position: relative; display: inline-block; }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
