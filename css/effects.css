@@ -3,5 +3,5 @@
 .fade-in.appear { opacity: 1; transform: translateY(0); }
 
 /* Cross-fade images */
-.transition { transition: opacity 4000ms ease; }
+.transition { transition: 4000ms ease; }
 .invisible { visibility: hidden; opacity: 0.0; }
