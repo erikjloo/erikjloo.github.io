@@ -33,10 +33,11 @@
             <a href="#">Link 3</a>
           </div>
         </div>
+        <!-- <my-scoocher>3</my-scoocher> -->
         <div class="scoocher">
-          <button class="scoocher__button"> - </button>
-          <input type="text" class="scoocher__text" value="0">
-          <button class="scoocher__button"> + </button>
+          <button class="scoocher__button" onclick="decrement()"> - </button>
+          <input id = "pickerCount" type="text" class="scoocher__text" value="4" onchange="setPickerCount()">
+          <button class="scoocher__button" onclick="increment()"> + </button>
         </div>
         <div id="colorpickers"></div>
       </div>
