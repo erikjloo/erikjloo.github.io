@@ -1,23 +1,23 @@
 .colors {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  max-width: 540px;
+  /* display: grid; */
+  /* max-width: 540px; */
   /* grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); */
-  /* justify-items: center; */
-  /* margin: 0 auto 5rem; */
+  justify-items: center;
+  margin: 0 auto 5rem;
 }
 
-.colorpickers {display: flex; width: 70%}
-.colorpicker {width: 65%;}
+.colorpickers { display: flex; justify-content: space-evenly; padding: 0.5em 1.5em; width: 70% }
+.colorpicker { width: 100px; }
 
-.box {height: 200px; width: 100%; border: 1px solid black; margin-right: 5px; }
+.box { height: 200px; width: 100%; border: 1px solid black; margin-right: 5px; }
 
 /* Dropdown Button */
 .dropbtn { background-color: #04AA6D; color: white; border: none; }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {position: relative; display: inline-block; }
+.dropdown { position: relative; width: 100px; display: inline-block; }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown__list {

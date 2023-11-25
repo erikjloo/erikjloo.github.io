@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8" name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <script src="https://use.fontawesome.com/a121ebfe88.js"></script>
+    <!-- <script src="https://use.fontawesome.com/a121ebfe88.js"></script> -->
     <script src="js/elements.js" defer></script>
     <script src="js/effects.js" defer></script>
     <script src="js/gradients.js" defer></script>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?familu=Source+Code+pro:400,900|Source+Sans+Pro:300,900&display=swap">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?familu=Source+Code+pro:400,900|Source+Sans+Pro:300,900&display=swap"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/elements.css">
     <link rel="stylesheet" href="css/effects.css">
@@ -26,23 +26,20 @@
 
       <div class="colors">
         <div class="dropdown">
-        <button class="dropbtn">Continious</button>
-        <div class="dropdown__list">
-          <a href="#">Continious</a>
-          <a href="#">Discrete</a>
-          <a href="#">Link 3</a>
+        <button class="dropbtn">Continuous</button>
+          <div class="dropdown__list">
+            <a href="#">Continuous</a>
+            <a href="#">Discrete</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
-        <button> - </button>
-        <div id="colorpickers">
-          <!-- <input type="color" id="color1" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:65%;">
-          <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#eb8f34" style="width:65%;">
-          <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ebe834" style="width:65%;">
-          <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#89eb34" style="width:65%;">
-          <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#346eeb" style="width:65%;">
-          <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#c034eb" style="width:65%;"> -->
+        <div class="scoocher">
+          <button class="scoocher__button"> - </button>
+          <input type="text" class="scoocher__text" value="0">
+          <button class="scoocher__button"> + </button>
         </div>
+        <div id="colorpickers"></div>
       </div>
-
       <div class='box'></div>
 
         

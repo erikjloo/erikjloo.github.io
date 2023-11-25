@@ -41,6 +41,11 @@
 .section__title::after { content: ''; display: block; width: 2em; height: 1px; }
 .section__title::after { margin: 0.5em auto 1em; background: var(--clr-fg2); }
 
+/* Scoocher*/
+.scoocher { display: flex; width: 70px; border: 1px solid var(--clr-fg); }
+.scoocher__button { width: 25%; background-color: var(--clr-fg); color: var(--clr-bg); }
+.scoocher__text { width: 50%; border-color: var(--clr-fg); text-align: center;}
+
 /* Thing (not sure what it should be called) */
 .portfolio-item-individual { padding: 0 2em 2em; max-width: 1000px; margin: 0 auto; }
 
