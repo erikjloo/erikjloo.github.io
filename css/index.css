@@ -43,13 +43,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   justify-items: center;
-  max-width: 540px;
+  max-width: 700px;
   margin: 0 auto 5rem;
 }
 
 .skill__item {
   background: black;
-  width: 90px;
+  width: 100px;
   height: 120px;
   border: var(--border);
   border-radius: 1em;
@@ -57,7 +57,7 @@
 }
 
 .skill__logo { position: absolute; transition: inherit; top: 30px; left: 30px; width: 30px; }
-.skill__text { position: absolute; transition: inherit; width: inherit; height: 30px; bottom: 0; opacity: 0; }
+.skill__text { position: absolute; transition: inherit; width: inherit; height: 30px; bottom: 0; opacity: 0; font-size: small; font-weight: bold;}
 .skill__item:hover img, .skill__item:focus img { transform: scale(2.0); }
 .skill__item:hover div, .skill__item:focus div { opacity: 1.0; }
 
