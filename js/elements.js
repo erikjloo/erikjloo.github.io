@@ -7,7 +7,7 @@ document.getElementById("header").innerHTML =
         <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
         <li class="nav__item"><a href="index.html#projects" class="nav__link">Portfolio</a></li>
         <li class="nav__item"><a href="gradients.html" class="nav__link">Colours</a></li>
-        <li class="nav__item"><a href="resume/GiesenLoo_CVEN21.pdf" class="nav__link">CV</a></li>
+        <li class="nav__item"><a href="resume/GiesenLoo_CVEN24.pdf" class="nav__link">CV</a></li>
       </ul>
     </nav>
   </header>`;
