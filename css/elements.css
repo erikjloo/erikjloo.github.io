@@ -2,7 +2,9 @@
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 2000; height: 2.5em; }
 .nav { transform: translate(0); transition: 250ms cubic-bezier(.5, 0, .5, 1); }
 .nav, .footer { background: var(--clr-nav); font-size: var(--fs-h3); font-weight: var(--fw-bold); }
+.material-symbols-outlined { font-size: 1.9rem;}
 .footer { color: var(--clr-fg); }
+
 
 .nav__list, .footer__list { display: flex; justify-content: space-evenly; padding: 0.5em 1.5em; }
 .footer__list { width: 10em; margin: auto; color: var(--clf-fg2); }

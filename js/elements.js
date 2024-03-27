@@ -3,9 +3,9 @@ document.getElementById("header").innerHTML =
     <button class="nav-toggle"><span class="burger"></span></button>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="index.html#projects" class="nav__link">Portfolio</a></li>
+        <li class="nav__item"><a href="index.html" class="nav__link"><span class="material-symbols-outlined">home</span></a></li>
+        <li class="nav__item"><a href="about.html" class="nav__link"><span class="material-symbols-outlined">info</span></a></li>
+        <li class="nav__item"><a href="index.html#projects" class="nav__link"><span class="material-symbols-outlined">star</span></a></li>
         <li class="nav__item"><a href="gradients.html" class="nav__link">Colours</a></li>
         <li class="nav__item"><a href="resume/GiesenLoo_CVEN24.pdf" class="nav__link">CV</a></li>
       </ul>
