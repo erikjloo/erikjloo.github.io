@@ -94,9 +94,5 @@
 .portfolio__item:hover img, .portfolio__item:focus img { transform: scale(1.2); opacity: 0.1; }
 .portfolio__item:hover div, .portfolio__item:focus div { opacity: 1.0; }
 
-/* Dividers */
-.skills__divider svg { height: 100px; }
-.skills__divider .shape-fill { fill: var(--clr-bg); }
-
-.projects__divider svg { height: 100px; transform: rotateY(180deg); }
-.projects__divider .shape-fill { fill: var(--clr-bg2); }
+/* Publication */
+.publication {text-align: left; text-indent: -28px; padding-left: 28px; }

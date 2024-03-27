@@ -54,5 +54,11 @@
 .divider svg { position: relative; display: block; width: calc(150% + 1.3px); height: 100px; }
 .divider .shape-fill { fill: var(--clr-bg); }
 
+.bg__divider svg { height: 100px; }
+.bg__divider .shape-fill { fill: var(--clr-bg); }
+
+.bg2__divider svg { height: 100px; transform: rotateY(180deg); }
+.bg2__divider .shape-fill { fill: var(--clr-bg2); }
+
 .footer__divider svg { height: 64px; transform: rotate(180deg); }
 .footer__divider .shape-fill { fill: var(--clr-nav); }

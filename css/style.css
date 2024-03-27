@@ -1,6 +1,7 @@
 /* Custom properties */
 :root {
   --ff-primary: 'Source Sans Pro', sans-serif;
+  /* --ff-primary: 'Noto-Emoji'; */
   --ff-secondary: 'Source Sans Pro', monospace;
   --fs-h1: 3rem;
   --fs-h2: 2rem;
@@ -50,4 +51,3 @@ h1, h2, h3 { line-height: 1; margin: 0; font-family: var(--ff-primary); }
 h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); color: var(--clr-fg); }
 h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); color: var(--clr-fg); }
 h3 { font-size: var(--fs-h3); font-weight: var(--fw-bold); color: var(--clr-fg); }
-
