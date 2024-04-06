@@ -14,7 +14,8 @@
   --clr-fg: skyblue;
   --clr-fg2: #fff;
   --clr-button: skyblue;
-  --border: 2px solid var(--clr-bg);
+  --clr-border: #242424;
+  --border: 2px solid var(--clr-border);
 }
 
 /* Set-up box-sizing (how padding is calculated) */
@@ -27,10 +28,10 @@ body {
   min-height: 100vh;              /* Footer needs this to go to bottom*/
   margin: 0 !important;           /* Footer needs this to remove its margin*/
   background: var(--clr-bg);      /* Background colour */
-  color: var(--clr-fg2);          /* Foreground colour */
   font-family: var(--ff-primary); /* Font */
   font-size: var(--fs-body);      /* Size */
   font-weight: var(--fw-reg);     /* Weight */
+  color: var(--clr-fg2);          /* Colour */
   text-align: center;             /* Alignment */
   line-height: 1.6;               /* Line spacing */
   overflow-x: hidden;

@@ -36,25 +36,24 @@
 
 .intro__button:hover { transform: scale(1.1); }
 
-/* skills */
-.skills { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
-.skills__item { width: 140px; height: 180px; }
-
-/* computers */
-.programming { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); margin: 0 auto 5rem; }
-.programming__item { width: 100px; height: 120px; }
-
 /* Portfolio */
-.portfolio { grid-template-columns: repeat(auto-fill, minmax(35ch, 1fr)); }
-.portfolio__item { width: 35ch; height: 35ch; }
-.portfolio__image { width: inherit; height: inherit; transition: inherit; }
-
-.portfolio__text { position: absolute; transition: inherit; top: 20px; left: 20px; right: 20px; opacity: 0; }
+.portfolio { grid-template-columns: repeat(auto-fill, minmax(19.2rem, 1fr)); }
+.portfolio__item { width: 19.2rem; height: 19rem; }
+.portfolio__text { position: absolute; transition: inherit; top: 1em; left: 1em; right: 1em; opacity: 0; }
 .portfolio__text p { font-family: var(--ff-secondary); color: var(--clr-fg2); }
 
 /* Portfolio Item */
 .portfolio__item:hover img, .portfolio__item:focus img { transform: scale(1.2); opacity: 0.1; }
 .portfolio__item:hover div, .portfolio__item:focus div { opacity: 1.0; }
+
+/* skills */
+.skills { grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); }
+.skills__item { width: 9.5rem; height: 10rem; }
+.fas { font-family: 'FontAwesome' !important; font-size: 5em; font-style: normal; }
+
+/* computers */
+.programming { max-width: 80ch; grid-template-columns: repeat(auto-fill, minmax(6.2rem, 1fr)); }
+.programming__item { width: 6.2rem; height: 8rem; }
 
 /* Publication */
 .publication {text-align: left; text-indent: -28px; padding-left: 28px; }
