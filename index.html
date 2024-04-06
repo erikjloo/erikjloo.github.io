@@ -6,7 +6,8 @@
     <script src="js/elements.js" defer></script>
     <script src="js/effects.js" defer></script>
     <script src="js/index.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?familu=Source+Code+pro:400,900|Source+Sans+Pro:300,900&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/elements.css">
@@ -45,30 +46,30 @@
     <!----------------------------------------------------------------->
     <section id="projects">
       <h2 class="section__title fade-in">Portfolio</h2>
-      <div class="portfolio">
-        <a href="fourgotten.html" class="portfolio__item fade-in">
-          <img src="images/projects/fourgotten.gif" alt="" class="portfolio__image">
+      <div class="grid portfolio">
+        <a href="fourgotten.html" class="panel portfolio__item fade-in">
+          <img src="images/projects/fourgotten.gif" class="portfolio__image">
           <div class="portfolio__text">
             <h3>Fourgotten</h3>
             <p>Three children trapped in separate rooms of a large mansion must learn to work together if they wish to escape. Will you be able to save them all? Or will someone be left behind?</p>
           </div>
         </a>
-        <a href="weak_pbc.html" class="portfolio__item fade-in">
-          <img src="images/projects/WeakPBC.png" alt="" class="portfolio__image">
+        <a href="weak_pbc.html" class="panel portfolio__item fade-in">
+          <img src="images/projects/WeakPBC.png" class="portfolio__image">
           <div class="portfolio__text">
             <h3>Weakly periodic boundary conditions</h3>
             <p>Novel stress-controlled weakly periodic boundary conditions are presented to upscale the microscale response of materials in multiscale finite element analyses.</p>
           </div>
         </a>
-        <a href="shells.html" class="portfolio__item fade-in">
-          <img src="images/projects/Shells.png" alt="" class="portfolio__image">
+        <a href="shells.html" class="panel portfolio__item fade-in">
+          <img src="images/projects/Shells.png" class="portfolio__image">
           <div class="portfolio__text">
             <h3>Buckling of shells</h3>
             <p>Thin shell structures are prone to local buckling due to high membrane forces. A parametric study is prepared as foundation for research into more accurate design equations.</p>
           </div>
         </a>
-        <a href="stability.html" class="portfolio__item fade-in">
-          <img src="images/projects/Frame.png" alt="" class="portfolio__image">
+        <a href="stability.html" class="panel portfolio__item fade-in">
+          <img src="images/projects/Frame.png" class="portfolio__image">
           <div class="portfolio__text">
             <h3>Design of steel structures</h3>
             <p>Design by advanced 2nd-order elastic analysis is based on the premise that reliance on approximate methods to account for design parameters can be reduced by directly modeling them in the analysis.</p>
@@ -88,36 +89,24 @@
     <!----------------------------------------------------------------->
     <!-- Skills -->
     <!----------------------------------------------------------------->
-    <section style="background: var(--clr-bg2);" id="skills">
+    <section style="background: var(--clr-bg2);">
       <h2 class="section__title fade-in">Skills</h2>
-      <div class="skills">
-        <div class="skill__item fade-in">
-          <img class ="skill__logo", display:inline-block, src="images/logos/cpp.png">
-          <div class="skill__text">C++</div>
+      <div class="grid skills">
+        <div class="panel skills__item fade-in">
+          <i class="fab fa-sitemap" style="color:rgb(202, 120, 120)"></i>
+          <div class="panel__text">Algorithms & data structures</div>
         </div>
-        <div class="skill__item fade-in">
-          <img class ="skill__logo", display:inline-block, src="images/logos/python.png">
-          <div class="skill__text">Python</div>
+        <div class="panel skills__item fade-in">
+          <i class="fab fa-cogs" style="color:rgb(120, 157, 202)"></i>
+          <div class="panel__text">Computational modelling</div>
         </div>
-        <div class="skill__item fade-in">
-          <img class="skill__logo" , display:inline-block, src="images/logos/JavaScript.png">
-          <div class="skill__text">JavaScript</div>
+        <div class="panel skills__item fade-in">
+          <i class="fab fa-gamepad" style="color:rgb(120, 202, 134)"></i>
+          <div class="panel__text">Game development</div>
         </div>
-        <div class="skill__item fade-in">
-          <img class ="skill__logo", display:inline-block, src="images/logos/matlab.png">
-          <div class="skill__text">MATLAB</div>             
-        </div>
-        <div class="skill__item fade-in">
-          <img class ="skill__logo", display:inline-block, src="images/logos/latex.png">
-          <div class="skill__text">Latex</div>
-        </div>
-        <div class="skill__item fade-in">
-          <img class ="skill__logo", display:inline-block, src="images/logos/Godot.png">
-          <div class="skill__text">Godot</div>
-        </div>
-        <div class="skill__item fade-in">
-          <img class ="skill__logo", display:inline-block, src="images/logos/Tux.png">
-          <div class="skill__text">Linux</div>
+        <div class="panel skills__item fade-in">
+          <i class="fab fa-bar-chart" style="color:rgb(202, 171, 120)"></i>
+          <div class="panel__text">Data analysis</div>
         </div>
       </div>
 
@@ -129,14 +118,42 @@
         </svg>
       </div>
     </section>
+    <!----------------------------------------------------------------->
+    <!-- Programming -->
+    <!----------------------------------------------------------------->
+    <section>
+      <h2 class="section__title fade-in">Programming</h2>
+      <div class="grid programming">
+        <div class="panel programming__item fade-in">
+          <img class ="panel__image", display:inline-block, src="images/logos/cpp.png">
+          <div class="panel__text">C++</div>
+        </div>
+        <div class="panel programming__item fade-in">
+          <img class ="panel__image", display:inline-block, src="images/logos/python.png">
+          <div class="panel__text">Python</div>
+        </div>
+        <div class="panel programming__item fade-in">
+          <img class="panel__image" , display:inline-block, src="images/logos/JavaScript.png">
+          <div class="panel__text">JavaScript</div>
+        </div>
+        <div class="panel programming__item fade-in">
+          <img class ="panel__image", display:inline-block, src="images/logos/matlab.png">
+          <div class="panel__text">MATLAB</div>             
+        </div>
+        <div class="panel programming__item fade-in">
+          <img class ="panel__image", display:inline-block, src="images/logos/latex.png">
+          <div class="panel__text">Latex</div>
+        </div>
+        <div class="panel programming__item fade-in">
+          <img class ="panel__image", display:inline-block, src="images/logos/Godot.png">
+          <div class="panel__text">Godot</div>
+        </div>
+        <div class="panel programming__item fade-in">
+          <img class ="panel__image", display:inline-block, src="images/logos/Tux.png">
+          <div class="panel__text">Linux</div>
+        </div>
+      </div>
 
-    <!----------------------------------------------------------------->
-    <!-- Publications -->
-    <!----------------------------------------------------------------->
-    <section id="publications">
-      <h2 class="section__title fade-in">Publications</h2>
-      <p class="publication fade-in">Giesen Loo E, van der Meer FP. Stress-controlled weakly periodic boundary conditions: Axial stress under varying orientations. Int J Numer Methods Eng. 2020;1–13. <a href="https://doi.org/10.1002/nme.6441">https://doi.org/10.1002/nme.6441</a></p>
-      <p class="publication fade-in">Giesen-Loo, E., Corbally, R., Feely, L., O’Sullivan, A. Enhanced Motorway Capacity Estimation: Considering the Impact of Vehicle Length on the Fundamental Diagram. IET Intelligent Transport Systems. 2024; Under Review.</p>
       <div class="divider bg2__divider">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -145,7 +162,23 @@
         </svg>
       </div>
     </section>
-    <section style="background: var(--clr-bg2);" id="publications">
+
+    <!----------------------------------------------------------------->
+    <!-- Publications -->
+    <!----------------------------------------------------------------->
+    <section style="background: var(--clr-bg2);">
+      <h2 class="section__title fade-in">Publications</h2>
+      <p class="publication fade-in">Giesen Loo E, van der Meer FP. Stress-controlled weakly periodic boundary conditions: Axial stress under varying orientations. Int J Numer Methods Eng. 2020;1–13. <a href="https://doi.org/10.1002/nme.6441">https://doi.org/10.1002/nme.6441</a></p>
+      <p class="publication fade-in">Giesen-Loo, E., Corbally, R., Feely, L., O’Sullivan, A. Enhanced Motorway Capacity Estimation: Considering the Impact of Vehicle Length on the Fundamental Diagram. IET Intelligent Transport Systems. 2024; Under Review.</p>
+      <div class="divider bg__divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+    <section>
       <h2 class="section__title fade-in">Conference Papers</h2>
         <p class="publication fade-in">Corbally, R., Giesen-Loo, E., Feely, L., O’Sullivan, A. (2024, Under Review). Data-Driven Motorway Traffic Flow Optimisation in Ireland using Variable Speed Limits. Proceedings of 30 th ITS World Congress, Dubai, UAE, 16-20 September 2024.</p>
         <p class="publication fade-in">Giesen-Loo, E., Corbally, R., Feely, L., O’Sullivan, A. (2024, Accepted). Motorway traffic flow optimization: from theory to practice. Proceedings of 11 th Transport Research Arena TRA Conference. Dublin, Ireland, 15-18 April 2024.</p>

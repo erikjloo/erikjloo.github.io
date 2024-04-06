@@ -1,12 +1,12 @@
 /* Header and footer */
+.material-symbols-outlined { font-size: 1.9rem; }
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 2000; height: 2.5em; }
 .nav { transform: translate(0); transition: 250ms cubic-bezier(.5, 0, .5, 1); }
+
 .nav, .footer { background: var(--clr-nav); font-size: var(--fs-h3); font-weight: var(--fw-bold); }
-.material-symbols-outlined { font-size: 1.9rem;}
-.footer { color: var(--clr-fg); }
-
-
 .nav__list, .footer__list { display: flex; justify-content: space-evenly; padding: 0.5em 1.5em; }
+
+.footer { color: var(--clr-fg); }
 .footer__list { width: 10em; margin: auto; color: var(--clf-fg2); }
 
 .nav__link:after { content: ''; display: block; width: 0; height: 2px; margin: auto; }
@@ -39,16 +39,26 @@
 .social__link { opacity: 0.6; margin: 0.5em; padding: 0.5em; }
 .social__link:hover { opacity: 1.0; }
 
-/* Little line under section titles */
+/* Section title */
 .section__title::after { content: ''; display: block; width: 2em; height: 1px; }
 .section__title::after { margin: 0.5em auto 1em; background: var(--clr-fg2); }
 
-/* Scoocher*/
+/* Panel grids */
+.grid { display: grid; justify-items: center; max-width: 70ch; margin: 0 auto 5rem;}
+.panel { background: black; border: var(--border); border-radius: 1em; overflow: hidden; transition: opacity 250ms linear, transform 500ms cubic-bezier(0.5, 0, 0.5, 1);}
+.panel__image { position: absolute; transition: inherit; top: 2em; left: 2em; width: calc(100% - 4em);}
+.panel__text { position: absolute; transition: inherit; width: inherit; height: 2em; bottom: 1em; opacity: 0; font-size: small; font-weight: bold;}
+.panel__text p { font-family: var(--ff-secondary); color: var(--clr-fg2); }
+.panel:hover img, .panel:focus img { transform: scale(2.0); }
+.panel:hover i, .panel:focus img { transform: font-size(60px); }
+.panel:hover div, .panel:focus div { opacity: 1.0; }
+
+/* Scoocher */
 .scoocher { display: flex; width: 70px; border: 1px solid var(--clr-fg); }
 .scoocher__button { width: 25%; background-color: var(--clr-fg); color: var(--clr-bg); }
 .scoocher__text { width: 50%; border-color: var(--clr-fg); text-align: center;}
 
-/* Thing (not sure what it should be called) */
+/* Portfolio item */
 .portfolio-item-individual { padding: 0 2em 2em; max-width: 1000px; margin: 0 auto; }
 
 /* Dividers */
